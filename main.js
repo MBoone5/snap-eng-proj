@@ -1,4 +1,5 @@
 import { showCards } from "./modules/card.js";
+import { quoteAlert } from "./modules/alerts.js";
 
 /**
  * Entrypoint for our JS logic, loaded as a module into <HEAD>
@@ -18,6 +19,10 @@ function fetchCardsJSON(dataPath) {
 	});
 }
 
+function setListeners() {
+  document.addEventListener()
+}
+
 function main() {
 	console.log("Entered main, commencing misson...");
 
@@ -29,6 +34,8 @@ function main() {
 		.catch((error) => {
 			console.error("Error while fetching card data: ", error);
 		});
+
+  quoteAlert();
 }
 
 // This calls main() function when the doc has loaded

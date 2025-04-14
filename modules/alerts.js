@@ -4,9 +4,15 @@
  **/
 
 // TODO: add JSdoc for this guy
-function quoteAlert() {
-	console.log("Button Clicked!");
-	alert(
-		"I guess I can kiss heaven goodbye, because it got to be a sin to look this good!",
-	);
+export function quoteAlert() {
+	const quoteButton = document.getElementById("quote-button");
+
+	if (quoteButton) {
+		quoteButton.addEventListener("click", () => {
+			console.log("Button Clicked!");
+			alert(
+				"I guess I can kiss heaven goodbye, because it got to be a sin to look this good!",
+			);
+		});
+	}
 }
