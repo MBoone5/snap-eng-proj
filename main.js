@@ -35,6 +35,7 @@ function main() {
 			console.error("Error while fetching card data: ", error);
 		});
 
+  // TODO: Add listeners module, or some other means of seperating concerns and bulk init of listeners
   quoteAlert();
 }
 
