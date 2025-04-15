@@ -2,10 +2,6 @@ import { Card, showCards } from "./modules/card.js";
 import { quoteAlert } from "./modules/alerts.js";
 
 /**
- * Entrypoint for our JS logic, loaded as a module into <HEAD>
- */
-
-/**
  * Function to fetch our static card data
  *
  * @param {string} dataPath - Path to our card data
@@ -19,6 +15,11 @@ function fetchCardsJSON(dataPath) {
 	});
 }
 
+
+/**
+ * Entrypoint for our JS logic, loaded as a module into <HEAD>
+ * @return {void} 
+ */
 function main() {
 	console.log("Entered main, commencing misson...");
 

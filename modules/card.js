@@ -11,7 +11,7 @@ export class Card {
 	/**
 	 * Constructor method for Card objects
 	 * @constructor
-	 * @param {Object} cardData - JSON Object containing the card data TODO: Create typedef with the json object structure
+	 * @param {!Object} cardData - JSON Object containing the card data TODO: Create typedef with the json object structure
 	 */
 	constructor(cardData) {
 		// TODO: Use camel case instead of snake case ;)
@@ -27,28 +27,32 @@ export class Card {
 		 * Flavor text on the card, if any, given this specific printing.
 		 * @type  {?string}
 		 */
-		this.flavor_text = flavor_text;
+		this.flavorText = flavor_text;
 
 		/**
 		 * Url to an image for the art of this card.
 		 * @type {!string}
 		 */
-		this.image_url = image_url;
+		this.imageURL = image_url;
 
 		/**
 		 * Metadata regarding this cards rulings/properties as an MTG card
 		 * @type {?Array<Object>}
 		 */
-		this.mtg_meta = mtg_meta;
+		this.mtgMeta = mtg_meta;
 
 		/**
 		 * Metadata regarding the entry for this card in the Scryfall database.
 		 * @type {?Array<Object>}
 		 */
-		this.scryfall_meta = scryfall_meta;
+		this.scryfallMeta = scryfall_meta;
 	}
 
-  // TODO: JSDoc
+  /**
+   * Generates a DOM element out of the card object 
+   * @param {!Object} template - a DOM card element to use as a template
+   * @return {!Object}
+   */
   render(template) {
     const render = template.cloneNode(true);
     const renderTitle = render.querySelector("h2");
@@ -59,7 +63,7 @@ export class Card {
     // Populate new element with card data
     renderTitle.textContent = this.title;
 
-    renderImage.src = this.image_url;
+    renderImage.src = this.imageURL;
     renderImage.alt = `Card Art - ${this.title}`;
 
 
