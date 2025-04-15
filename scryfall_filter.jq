@@ -1,7 +1,7 @@
 {
   card_data: [
     .data.[] | {
-      name,
+      title: .name,
       flavor_text,
       image_url: .image_uris.border_crop,
       mtg_meta: {

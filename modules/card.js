@@ -1,4 +1,4 @@
-// TODO: Create a typedef for Card objects
+// export class Card {}
 
 /**
  * Accepts an array of card objects, and inserts them into the DOM
