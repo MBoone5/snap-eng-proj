@@ -3,6 +3,38 @@
  * @module card
  */
 
+// Custom Typedefs
+/**
+ * @typedef {Object} MTGMeta
+ * @property {!string} type
+ * @property {?Array<string>} colors
+ * @property {?string} mana_cost
+ * @property {!number} cmc
+ */
+
+/**
+ * @typedef {Object} ScryfallMeta
+ * @property {!string} oracle_id
+ * @property {!string} scryfall_uri
+ * // ...other properties as needed
+ */
+
+/**
+ * @typedef {Object} CardJSON
+ * @property {!string} title
+ * @property {?string} flavor_text
+ * @property {!string} image_url
+ * @property {!MTGMeta} mtg_meta
+ * @property {!ScryfallMeta} scryfall_meta
+ */
+
+/** 
+ * @typedef {Array<Card>} CardCollection
+ */
+
+/**
+ * @type
+
 /**
  * Represents a card element within the catalogue
  * @class
@@ -11,10 +43,10 @@ export class Card {
 	/**
 	 * Constructor method for Card objects
 	 * @constructor
-	 * @param {!Object} cardData - JSON Object containing the card data TODO: Create typedef with the json object structure
+	 * @param {!CardJSON} cardJSON - JSON Object containing the card data TODO: Create typedef with the json object structure
 	 */
-	constructor(cardData) {
-		const { title, flavor_text, image_url, mtg_meta, scryfall_meta } = cardData;
+	constructor(cardJSON) {
+		const { title, flavor_text, image_url, mtg_meta, scryfall_meta } = cardJSON;
 
     /**
      * ID of this card and the specific printing, within the scryfall DB
@@ -126,7 +158,7 @@ export class Card {
     renderMeta.querySelector("#color-info").innerHTML = colorIcons;
     renderMeta.querySelector("#scryfall-link>a").href = this.scryfallURL;
 
-	  console.log("new card:", renderTitle, "- html: ", render);
+	  // console.log("new card:", renderTitle, "- html: ", render);
 
     return render 
   }
@@ -135,7 +167,7 @@ export class Card {
 /**
  * Accepts an array of card objects, and inserts them into the DOM
  *
- * @param {Array<Object>} cardData - An array of objects
+ * @param {!Array<Card>} cardData - An array of Card objects to render into the DOM
  *
  */
 export function showCards(cardData) {
