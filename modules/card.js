@@ -14,7 +14,6 @@ export class Card {
 	 * @param {!Object} cardData - JSON Object containing the card data TODO: Create typedef with the json object structure
 	 */
 	constructor(cardData) {
-		// TODO: Use camel case instead of snake case ;)
 		const { title, flavor_text, image_url, mtg_meta, scryfall_meta } = cardData;
 
 		/**
@@ -53,7 +52,7 @@ export class Card {
    * return {!Array<string>}
    */
   getManaIcons() {
-    const iconTemplate = "<i class='ms ms-shadow ms-${icon}'></i>";
+    const iconTemplate = "<i class='ms ms-cost ms-${icon}'></i>";
     const cardColors = this.mtgMeta.colors;
 
     // early check for colorless
@@ -87,7 +86,12 @@ export class Card {
 
     // Populate meta info
     renderMeta.querySelector("#type").textContent = this.mtgMeta.type;
-    renderMeta.querySelector("#flavor").textContent = this.flavorText;
+
+    if (this.flavorText) {
+      const flavorTextHeader = renderMeta.querySelector("#flavor");
+      flavorTextHeader.textContent = this.flavorText;
+      flavorTextHeader.style.display = "block";
+    }
 
     const colorIcons = this.getManaIcons().join("");
     renderMeta.querySelector("#color-info").innerHTML = colorIcons;
