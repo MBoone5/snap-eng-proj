@@ -16,14 +16,26 @@ export class Card {
 	constructor(cardData) {
 		const { title, flavor_text, image_url, mtg_meta, scryfall_meta } = cardData;
 
+    /**
+     * ID of this card and the specific printing, within the scryfall DB
+     * @type {!string}
+     */
+    this.id = scryfall_meta.oracle_id;
+
+    /**
+     * URL for the scryfall page for this card
+     * @type {!string}
+     */
+    this.scryfallURL = scryfall_meta.scryfall_uri;
+
 		/**
-		 * Title of the card.
+		 * Title of this card.
 		 * @type {!string}
 		 */
 		this.title = title;
 
 		/**
-		 * Flavor text on the card, if any, given this specific printing.
+		 * Flavor text on this card, if any, given this specific printing.
 		 * @type  {?string}
 		 */
 		this.flavorText = flavor_text;
@@ -35,10 +47,28 @@ export class Card {
 		this.imageURL = image_url;
 
 		/**
-		 * Metadata regarding this cards rulings/properties as an MTG card
-		 * @type {?Array<Object>}
+		 * String containing the typeline of this card's oracle text
+		 * @type {!string}
 		 */
-		this.mtgMeta = mtg_meta;
+		this.type = mtg_meta.type;
+    
+		/**
+		 * Array of strings that denote the color identity of this card (e.g. "U" for blue, "W" for white, etc.)
+		 * @type {?Array<string>}
+		 */
+		this.colors = mtg_meta.colors;
+    
+		/**
+		 * String containing the mana cost of this card (e.g. "{3}{W}{B}, {2}, etc.")
+		 * @type {?string}
+		 */
+		this.manaCost = mtg_meta.mana_cost;
+
+		/**
+		 * Numeric value for the total mana paid for the mana cost of this card 
+		 * @type {!number}
+		 */
+		this.convertedManaCost = mtg_meta.cmc;
 
 		/**
 		 * Metadata regarding the entry for this card in the Scryfall database.
@@ -53,20 +83,19 @@ export class Card {
    */
   getManaIcons() {
     const iconTemplate = "<i class='ms ms-cost ms-${icon}'></i>";
-    const cardColors = this.mtgMeta.colors;
 
     // early check for colorless
-    if (cardColors.length === 0) {
+    if (this.colors.length === 0) {
       return [iconTemplate.replace("${icon}", "c")];
     }
     
-    const iconsList = cardColors.map((color) => iconTemplate.replace("${icon}", color.toLowerCase()));
+    const iconsList = this.colors.map((color) => iconTemplate.replace("${icon}", color.toLowerCase()));
 
     return iconsList
   }
 
   /**
-   * Generates a DOM element out of the card object 
+   * Generates a DOM element out of this card object 
    * @param {!Object} template - a DOM card element to use as a template
    * @return {!Object}
    */
@@ -85,7 +114,7 @@ export class Card {
     renderImage.alt = `Card Art - ${this.title}`;
 
     // Populate meta info
-    renderMeta.querySelector("#type").textContent = this.mtgMeta.type;
+    renderMeta.querySelector("#type").textContent = this.type;
 
     if (this.flavorText) {
       const flavorTextHeader = renderMeta.querySelector("#flavor");
@@ -95,7 +124,7 @@ export class Card {
 
     const colorIcons = this.getManaIcons().join("");
     renderMeta.querySelector("#color-info").innerHTML = colorIcons;
-    renderMeta.querySelector("#scryfall-link>a").href = this.scryfallMeta.scryfall_uri;
+    renderMeta.querySelector("#scryfall-link>a").href = this.scryfallURL;
 
 	  console.log("new card:", renderTitle, "- html: ", render);
 
