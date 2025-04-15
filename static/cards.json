@@ -1,16 +1,1451 @@
 {
   "card_data": [
     {
-      "title": "Fresh Prince of Bel Air",
-      "image_url": "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg"
+      "name": "Adriana's Valor",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/8/b/8bfd6889-90e2-49fe-bd30-7d850dc18db2.jpg?1720517028",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "512a9ab9-ddd4-4872-b4f4-dee56f9f5575",
+        "scryfall_uri": "https://scryfall.com/card/cn2/1/adrianas-valor?utm_source=api"
+      }
     },
     {
-      "title": "Curb Your Enthusiasm",
-      "image_url": "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg"
+      "name": "Advantageous Proclamation",
+      "flavor_text": "\"The beneficent council deems you worthy of favor. They hope this doesn't provoke envy from your peers.\"",
+      "image_url": "https://cards.scryfall.io/border_crop/front/f/8/f8c37fe8-43b3-454e-a70b-5b0d0f396a33.jpg?1681082854",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "86373537-7424-416a-8d89-cc38f6538458",
+        "scryfall_uri": "https://scryfall.com/card/cns/1/advantageous-proclamation?utm_source=api"
+      }
     },
     {
-      "title": "East Los High",
-      "image_url": "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg"
+      "name": "Amulet of Quoz",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/7/6/764ec6a8-a878-446c-b7e4-6026c2a3e9a4.jpg?1562916864",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{6}",
+        "cmc": 6.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "a06f8476-0a23-413a-bc28-8dc2427fdc2a",
+        "scryfall_uri": "https://scryfall.com/card/ice/308/amulet-of-quoz?utm_source=api"
+      }
+    },
+    {
+      "name": "Ancestral Recall",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/2/d/2dd41293-d7c8-4422-9f0c-b3e96350f5c9.jpg?1559592144",
+      "mtg_meta": {
+        "colors": [
+          "U"
+        ],
+        "mana_cost": "{U}",
+        "cmc": 1.0,
+        "type": "Instant"
+      },
+      "scryfall_meta": {
+        "oracle_id": "550c74d4-1fcb-406a-b02a-639a760a4380",
+        "scryfall_uri": "https://scryfall.com/card/2ed/48/ancestral-recall?utm_source=api"
+      }
+    },
+    {
+      "name": "Assemble the Rank and Vile",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/7/0/7023889e-924f-495f-b189-82592989d659.jpg?1720517032",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "8c912b1f-4584-4945-9931-f6850e5ebfa4",
+        "scryfall_uri": "https://scryfall.com/card/cn2/2/assemble-the-rank-and-vile?utm_source=api"
+      }
+    },
+    {
+      "name": "Backup Plan",
+      "flavor_text": "\"In the market for an alternative, friend?\"",
+      "image_url": "https://cards.scryfall.io/border_crop/front/8/4/84c5a45a-adc2-41f9-893c-58a03bebbf0c.jpg?1681082857",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "6f14f61f-e533-4541-b861-4dbaf0d88833",
+        "scryfall_uri": "https://scryfall.com/card/cns/2/backup-plan?utm_source=api"
+      }
+    },
+    {
+      "name": "Balance",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/c/e/ce648aa3-098b-4af0-a433-fd290bc85904.jpg?1737999968",
+      "mtg_meta": {
+        "colors": [
+          "W"
+        ],
+        "mana_cost": "{1}{W}",
+        "cmc": 2.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "17fa98cd-ed8f-483f-9525-7e989a82ebb2",
+        "scryfall_uri": "https://scryfall.com/card/ema/2/balance?utm_source=api"
+      }
+    },
+    {
+      "name": "Biorhythm",
+      "flavor_text": "\"I have seen life's purpose, and now it is my own.\"\n—Kamahl, druid acolyte",
+      "image_url": "https://cards.scryfall.io/border_crop/front/1/7/17d1a10f-ce21-4914-9984-c7c559161230.jpg?1593017425",
+      "mtg_meta": {
+        "colors": [
+          "G"
+        ],
+        "mana_cost": "{6}{G}{G}",
+        "cmc": 8.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "447de961-106c-4189-83ce-ca63d487e1cd",
+        "scryfall_uri": "https://scryfall.com/card/9ed/231/biorhythm?utm_source=api"
+      }
+    },
+    {
+      "name": "Black Lotus",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/4/a/4a2e428c-dd25-484c-bbc8-2d6ce10ef42c.jpg?1559591808",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{0}",
+        "cmc": 0.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "5089ec1a-f881-4d55-af14-5d996171203b",
+        "scryfall_uri": "https://scryfall.com/card/2ed/233/black-lotus?utm_source=api"
+      }
+    },
+    {
+      "name": "Brago's Favor",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/9/b/9bb6ece9-2038-4dbc-83aa-01ab4d7980b4.jpg?1720517033",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "395b312b-8fe6-4c28-b91d-620b5fcb9e6d",
+        "scryfall_uri": "https://scryfall.com/card/cns/3/bragos-favor?utm_source=api"
+      }
+    },
+    {
+      "name": "Braids, Cabal Minion",
+      "flavor_text": "\"Home is where you can find a decent graveyard and strangers can disappear without awkward questions.\"",
+      "image_url": "https://cards.scryfall.io/border_crop/front/2/7/27691efa-052d-4afe-b9ef-159858ca660f.jpg?1626100340",
+      "mtg_meta": {
+        "colors": [
+          "B"
+        ],
+        "mana_cost": "{2}{B}{B}",
+        "cmc": 4.0,
+        "type": "Legendary Creature — Human Minion"
+      },
+      "scryfall_meta": {
+        "oracle_id": "d85aa59b-c6aa-4b2f-885c-59d6e5e6e8b9",
+        "scryfall_uri": "https://scryfall.com/card/mh2/273/braids-cabal-minion?utm_source=api"
+      }
+    },
+    {
+      "name": "Bronze Tablet",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/c/a/cad56033-c1f9-4477-9dd6-ba7009c30593.jpg?1559603594",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{6}",
+        "cmc": 6.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "a1ab033f-9605-4ca2-a98b-c0b2e1599609",
+        "scryfall_uri": "https://scryfall.com/card/4ed/303/bronze-tablet?utm_source=api"
+      }
+    },
+    {
+      "name": "Channel",
+      "flavor_text": "To some mages, the meaning of life is less important than how much is left.",
+      "image_url": "https://cards.scryfall.io/border_crop/front/c/e/ce54c7c1-3401-4414-8da0-5846cb0ae1b4.jpg?1701989326",
+      "mtg_meta": {
+        "colors": [
+          "G"
+        ],
+        "mana_cost": "{G}{G}",
+        "cmc": 2.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "d1b815d1-2848-40d4-a555-66822d1becbc",
+        "scryfall_uri": "https://scryfall.com/card/ima/157/channel?utm_source=api"
+      }
+    },
+    {
+      "name": "Chaos Orb",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/7/a/7a601041-926f-40fd-8106-39099b87806f.jpg?1559592122",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{2}",
+        "cmc": 2.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "edb455f4-8dc9-4b7c-b25c-cb51b7dfbb41",
+        "scryfall_uri": "https://scryfall.com/card/2ed/236/chaos-orb?utm_source=api"
+      }
+    },
+    {
+      "name": "Cleanse",
+      "flavor_text": "The clouds broke and the sun's rays burst forth; each foul beast in its turn faltered, and was gone.",
+      "image_url": "https://cards.scryfall.io/border_crop/front/2/f/2fbd611b-ac97-4516-bad7-cc9ee4ef74f7.jpg?1591836785",
+      "mtg_meta": {
+        "colors": [
+          "W"
+        ],
+        "mana_cost": "{2}{W}{W}",
+        "cmc": 4.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "a610c77c-fe31-4465-a1c1-392db4ce4ed1",
+        "scryfall_uri": "https://scryfall.com/card/leg/5/cleanse?utm_source=api"
+      }
+    },
+    {
+      "name": "Coalition Victory",
+      "flavor_text": "\"You can build a perfect machine out of imperfect parts.\"\n—Urza",
+      "image_url": "https://cards.scryfall.io/border_crop/front/4/4/446824f7-dc42-42da-8bd5-6c37f3358d65.jpg?1562775464",
+      "mtg_meta": {
+        "colors": [
+          "B",
+          "G",
+          "R",
+          "U",
+          "W"
+        ],
+        "mana_cost": "{3}{W}{U}{B}{R}{G}",
+        "cmc": 8.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "e9e25800-9ee7-40c9-b22d-611c7281c125",
+        "scryfall_uri": "https://scryfall.com/card/tsb/91/coalition-victory?utm_source=api"
+      }
+    },
+    {
+      "name": "Contract from Below",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/e/1/e1e33690-b851-404a-9cde-d00235be5aa5.jpg?1610146838",
+      "mtg_meta": {
+        "colors": [
+          "B"
+        ],
+        "mana_cost": "{B}",
+        "cmc": 1.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "9e0ed4b0-28b5-44be-ab83-f1e8eb07138d",
+        "scryfall_uri": "https://scryfall.com/card/sum/97/contract-from-below?utm_source=api"
+      }
+    },
+    {
+      "name": "Crusade",
+      "flavor_text": "\"Finally, I understand. Home isn't where you rest. It's what you fight for.\"\n—Elspeth Tirel",
+      "image_url": "https://cards.scryfall.io/border_crop/front/b/9/b99452c0-5d1c-4a73-90b6-0ec3ac0af893.jpg?1740685902",
+      "mtg_meta": {
+        "colors": [
+          "W"
+        ],
+        "mana_cost": "{W}{W}",
+        "cmc": 2.0,
+        "type": "Enchantment"
+      },
+      "scryfall_meta": {
+        "oracle_id": "4692740f-be90-459f-8d90-c4ae71771595",
+        "scryfall_uri": "https://scryfall.com/card/ddf/27/crusade?utm_source=api"
+      }
+    },
+    {
+      "name": "Darkpact",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/f/9/f9ab1c5e-e36e-4a2a-9e6d-c993edc17c03.jpg?1610146891",
+      "mtg_meta": {
+        "colors": [
+          "B"
+        ],
+        "mana_cost": "{B}{B}{B}",
+        "cmc": 3.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "74f10b9a-a286-49b2-bfa1-a427ff041bd4",
+        "scryfall_uri": "https://scryfall.com/card/sum/100/darkpact?utm_source=api"
+      }
+    },
+    {
+      "name": "Demonic Attorney",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/2/3/233b1104-91b3-4949-8356-baf6e80ab07e.jpg?1610146895",
+      "mtg_meta": {
+        "colors": [
+          "B"
+        ],
+        "mana_cost": "{1}{B}{B}",
+        "cmc": 3.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "65a9f643-063f-406a-8d5a-5ebbe0f04c3d",
+        "scryfall_uri": "https://scryfall.com/card/sum/103/demonic-attorney?utm_source=api"
+      }
+    },
+    {
+      "name": "Dockside Extortionist",
+      "flavor_text": "\"It's just business.\"",
+      "image_url": "https://cards.scryfall.io/border_crop/front/9/e/9e2e3efb-75cb-430f-b9f4-cb58f3aeb91b.jpg?1727093692",
+      "mtg_meta": {
+        "colors": [
+          "R"
+        ],
+        "mana_cost": "{1}{R}",
+        "cmc": 2.0,
+        "type": "Creature — Goblin Pirate"
+      },
+      "scryfall_meta": {
+        "oracle_id": "697bcfe1-ecbf-42a1-bfc7-0766d48ca56b",
+        "scryfall_uri": "https://scryfall.com/card/2x2/107/dockside-extortionist?utm_source=api"
+      }
+    },
+    {
+      "name": "Double Stroke",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/b/0/b0ec6d79-8a22-49d5-ac00-7fd60b278a4d.jpg?1681082859",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "e25ab152-e166-44df-8f92-668bab0e9619",
+        "scryfall_uri": "https://scryfall.com/card/cns/4/double-stroke?utm_source=api"
+      }
+    },
+    {
+      "name": "Echoing Boon",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/1/6/165dd3b0-0878-448e-b922-019d0ba372d0.jpg?1681082860",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "22e89c6d-2304-4def-8a74-e53a6271e9b9",
+        "scryfall_uri": "https://scryfall.com/card/cn2/3/echoing-boon?utm_source=api"
+      }
+    },
+    {
+      "name": "Emissary's Ploy",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/c/e/ce5f3b5c-feb8-4304-852f-01c467d6517c.jpg?1681082864",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "88e936c3-cab9-430f-baa1-930ff557cbf6",
+        "scryfall_uri": "https://scryfall.com/card/cn2/4/emissarys-ploy?utm_source=api"
+      }
+    },
+    {
+      "name": "Emrakul, the Aeons Torn",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/2/4/249db4d4-2542-47ee-a216-e13ffbc2319c.jpg?1673146896",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{15}",
+        "cmc": 15.0,
+        "type": "Legendary Creature — Eldrazi"
+      },
+      "scryfall_meta": {
+        "oracle_id": "900ca697-ad38-4b2b-bc74-2ff7eb6ea951",
+        "scryfall_uri": "https://scryfall.com/card/2x2/1/emrakul-the-aeons-torn?utm_source=api"
+      }
+    },
+    {
+      "name": "Erayo, Soratami Ascendant // Erayo's Essence",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/0/b/0b61d772-2d8b-4acf-9dd2-b2e8b03538c8.jpg?1737573031",
+      "mtg_meta": {
+        "colors": [
+          "U"
+        ],
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "type": "Legendary Creature — Moonfolk Monk // Legendary Enchantment"
+      },
+      "scryfall_meta": {
+        "oracle_id": "d83bb32d-f409-421a-9d93-bd7ea3240b47",
+        "scryfall_uri": "https://scryfall.com/card/sok/35/erayo-soratami-ascendant-erayos-essence?utm_source=api"
+      }
+    },
+    {
+      "name": "Falling Star",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/f/2/f2b9983e-20d4-4d12-9e2c-ec6d9a345787.jpg?1562861838",
+      "mtg_meta": {
+        "colors": [
+          "R"
+        ],
+        "mana_cost": "{2}{R}",
+        "cmc": 3.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "f5ca7b13-8003-4361-b827-7095c89f2750",
+        "scryfall_uri": "https://scryfall.com/card/leg/145/falling-star?utm_source=api"
+      }
+    },
+    {
+      "name": "Fastbond",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/9/d/9ded52aa-67a2-4476-a278-1eea936b3248.jpg?1559592914",
+      "mtg_meta": {
+        "colors": [
+          "G"
+        ],
+        "mana_cost": "{G}",
+        "cmc": 1.0,
+        "type": "Enchantment"
+      },
+      "scryfall_meta": {
+        "oracle_id": "e27193b7-1a47-4555-865d-b1fd4c6d597f",
+        "scryfall_uri": "https://scryfall.com/card/sum/194/fastbond?utm_source=api"
+      }
+    },
+    {
+      "name": "Flash",
+      "flavor_text": "No tactic transforms a battle like a well-timed carnivore.",
+      "image_url": "https://cards.scryfall.io/border_crop/front/d/3/d31459c2-9656-4e9a-bb72-71a910e8570b.jpg?1587347037",
+      "mtg_meta": {
+        "colors": [
+          "U"
+        ],
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "type": "Instant"
+      },
+      "scryfall_meta": {
+        "oracle_id": "3e057471-e415-4105-9064-8236a0a5047d",
+        "scryfall_uri": "https://scryfall.com/card/a25/57/flash?utm_source=api"
+      }
+    },
+    {
+      "name": "Gifts Ungiven",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/c/c/cc950b6c-0346-4939-b36b-9f10a75f7a32.jpg?1685966742",
+      "mtg_meta": {
+        "colors": [
+          "U"
+        ],
+        "mana_cost": "{3}{U}",
+        "cmc": 4.0,
+        "type": "Instant"
+      },
+      "scryfall_meta": {
+        "oracle_id": "58aec411-167d-4709-8560-793eaaed62c5",
+        "scryfall_uri": "https://scryfall.com/card/2x2/51/gifts-ungiven?utm_source=api"
+      }
+    },
+    {
+      "name": "Golos, Tireless Pilgrim",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/1/f/1fa48620-4c3d-4f75-be1f-c12c4aa59f51.jpg?1631531828",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{5}",
+        "cmc": 5.0,
+        "type": "Legendary Artifact Creature — Scout"
+      },
+      "scryfall_meta": {
+        "oracle_id": "efe9c3e0-7315-408e-9903-9d25a681039b",
+        "scryfall_uri": "https://scryfall.com/card/m20/226/golos-tireless-pilgrim?utm_source=api"
+      }
+    },
+    {
+      "name": "Griselbrand",
+      "flavor_text": "\"Avacyn emerged from the broken Helvault, but her freedom came at a price—him.\"\n—Thalia, Knight-Cathar",
+      "image_url": "https://cards.scryfall.io/border_crop/front/4/0/4069e510-f3f3-4668-9f13-3546fa9bc7c3.jpg?1736467973",
+      "mtg_meta": {
+        "colors": [
+          "B"
+        ],
+        "mana_cost": "{4}{B}{B}{B}{B}",
+        "cmc": 8.0,
+        "type": "Legendary Creature — Demon"
+      },
+      "scryfall_meta": {
+        "oracle_id": "f759d112-76db-4091-a22b-b9f19ab6fa5f",
+        "scryfall_uri": "https://scryfall.com/card/inr/115/griselbrand?utm_source=api"
+      }
+    },
+    {
+      "name": "Hired Heist",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/d/3/d3914468-d769-4fe3-ae18-0caee9eb1502.jpg?1720517035",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "b0d84455-dc35-45d3-901e-8d28363142f4",
+        "scryfall_uri": "https://scryfall.com/card/cn2/5/hired-heist?utm_source=api"
+      }
+    },
+    {
+      "name": "Hold the Perimeter",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/0/0/00717f7c-0778-4a02-b6c0-b3c3f07e75a9.jpg?1681082896",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "20f7f33d-0c49-49f7-80fa-aed86e33a528",
+        "scryfall_uri": "https://scryfall.com/card/cn2/6/hold-the-perimeter?utm_source=api"
+      }
+    },
+    {
+      "name": "Hullbreacher",
+      "flavor_text": "\"I don't need a map to find riches.\"",
+      "image_url": "https://cards.scryfall.io/border_crop/front/4/d/4df8aabc-7fcb-4b7b-980b-18f499e6c170.jpg?1626088514",
+      "mtg_meta": {
+        "colors": [
+          "U"
+        ],
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "type": "Creature — Merfolk Pirate"
+      },
+      "scryfall_meta": {
+        "oracle_id": "2f533667-e29b-4bec-897a-e7a9eee08314",
+        "scryfall_uri": "https://scryfall.com/card/cmr/74/hullbreacher?utm_source=api"
+      }
+    },
+    {
+      "name": "Hymn of the Wilds",
+      "flavor_text": "Many attempt to speak with nature. Selvala speaks less, and nature answers more.",
+      "image_url": "https://cards.scryfall.io/border_crop/front/e/7/e7902666-21f2-4590-9dca-e95858dbde70.jpg?1681082896",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "dfa62414-48c6-4e5c-8609-1ce507b41505",
+        "scryfall_uri": "https://scryfall.com/card/cn2/7/hymn-of-the-wilds?utm_source=api"
+      }
+    },
+    {
+      "name": "Immediate Action",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/1/6/167c6740-0625-4987-8fac-516aab564ca1.jpg?1720517036",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "5a9c1c2d-d4d7-4df3-a853-f1b81c67b3e3",
+        "scryfall_uri": "https://scryfall.com/card/cns/5/immediate-action?utm_source=api"
+      }
+    },
+    {
+      "name": "Imprison",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/1/2/12671381-beb7-41b8-9484-97f8aca5c981.jpg?1740685906",
+      "mtg_meta": {
+        "colors": [
+          "B"
+        ],
+        "mana_cost": "{B}",
+        "cmc": 1.0,
+        "type": "Enchantment — Aura"
+      },
+      "scryfall_meta": {
+        "oracle_id": "632de66b-2314-4299-847c-16a84bf9121f",
+        "scryfall_uri": "https://scryfall.com/card/leg/107/imprison?utm_source=api"
+      }
+    },
+    {
+      "name": "Incendiary Dissent",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/c/f/cfbe340b-ca40-4604-bdc6-4b00e7444df4.jpg?1720517037",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "70caaa64-9623-4d05-9843-18460fea963b",
+        "scryfall_uri": "https://scryfall.com/card/cn2/8/incendiary-dissent?utm_source=api"
+      }
+    },
+    {
+      "name": "Invoke Prejudice",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/9/0/903d9fde-d7da-4a0e-a337-b63023c6d74b.jpg?1740685915",
+      "mtg_meta": {
+        "colors": [
+          "U"
+        ],
+        "mana_cost": "{U}{U}{U}{U}",
+        "cmc": 4.0,
+        "type": "Enchantment"
+      },
+      "scryfall_meta": {
+        "oracle_id": "854ad486-0c59-4c57-9a76-ab1dff0ff37c",
+        "scryfall_uri": "https://scryfall.com/card/leg/62/invoke-prejudice?utm_source=api"
+      }
+    },
+    {
+      "name": "Iona, Shield of Emeria",
+      "flavor_text": "No more shall the righteous cower before evil.",
+      "image_url": "https://cards.scryfall.io/border_crop/front/6/1/6197b59e-1652-496c-a038-e2eb88ecf017.jpg?1562584407",
+      "mtg_meta": {
+        "colors": [
+          "W"
+        ],
+        "mana_cost": "{6}{W}{W}{W}",
+        "cmc": 9.0,
+        "type": "Legendary Creature — Angel"
+      },
+      "scryfall_meta": {
+        "oracle_id": "5e816472-561d-43d1-ad28-80a829e2a91a",
+        "scryfall_uri": "https://scryfall.com/card/mm2/20/iona-shield-of-emeria?utm_source=api"
+      }
+    },
+    {
+      "name": "Iterative Analysis",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/2/1/212a39fa-e1b3-4ae3-945f-6d8cda6372ae.jpg?1681082904",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "79172853-240c-4924-8b20-edf469946df4",
+        "scryfall_uri": "https://scryfall.com/card/cns/6/iterative-analysis?utm_source=api"
+      }
+    },
+    {
+      "name": "Jeweled Bird",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/d/7/d78e61e5-9313-4c83-af38-98849aea4e42.jpg?1562938280",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{1}",
+        "cmc": 1.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "89f5b21c-18da-4071-bc42-9cdc433734bf",
+        "scryfall_uri": "https://scryfall.com/card/chr/102/jeweled-bird?utm_source=api"
+      }
+    },
+    {
+      "name": "Jeweled Lotus",
+      "flavor_text": "\"I've seen my share of baubles, minister. Whatever ostentatious bit of glitter you have there won't convince me to ... Oh my.\"\n—Emperor Ayrelion",
+      "image_url": "https://cards.scryfall.io/border_crop/front/d/7/d7183700-6941-4a3d-a581-4f33bea795e9.jpg?1727093687",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{0}",
+        "cmc": 0.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "23216e59-f147-4bb7-a698-12777c2f8584",
+        "scryfall_uri": "https://scryfall.com/card/cmm/396/jeweled-lotus?utm_source=api"
+      }
+    },
+    {
+      "name": "Jihad",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/b/6/b6c7705a-2987-4ef1-92b1-2c55d989ec6f.jpg?1740685879",
+      "mtg_meta": {
+        "colors": [
+          "W"
+        ],
+        "mana_cost": "{W}{W}{W}",
+        "cmc": 3.0,
+        "type": "Enchantment"
+      },
+      "scryfall_meta": {
+        "oracle_id": "b18b9869-8490-4875-a5bb-484c3299f2c5",
+        "scryfall_uri": "https://scryfall.com/card/arn/5/jihad?utm_source=api"
+      }
+    },
+    {
+      "name": "Karakas",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/e/5/e52214e1-404a-405a-b08e-20e13c087338.jpg?1559959289",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Legendary Land"
+      },
+      "scryfall_meta": {
+        "oracle_id": "59119143-c0fa-49dd-adf0-e2fd3029c48b",
+        "scryfall_uri": "https://scryfall.com/card/uma/244/karakas?utm_source=api"
+      }
+    },
+    {
+      "name": "Leovold, Emissary of Trest",
+      "flavor_text": "\"I'm sure we can come to an arrangement.\"",
+      "image_url": "https://cards.scryfall.io/border_crop/front/c/e/cedfc5b7-9242-4680-b284-debc8b5a9bc7.jpg?1559959275",
+      "mtg_meta": {
+        "colors": [
+          "B",
+          "G",
+          "U"
+        ],
+        "mana_cost": "{B}{G}{U}",
+        "cmc": 3.0,
+        "type": "Legendary Creature — Elf Advisor"
+      },
+      "scryfall_meta": {
+        "oracle_id": "d5d91377-fd66-4dbe-a092-07f2ea379ca7",
+        "scryfall_uri": "https://scryfall.com/card/uma/202/leovold-emissary-of-trest?utm_source=api"
+      }
+    },
+    {
+      "name": "Library of Alexandria",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/e/e/ee266113-34ce-4189-84e7-ee2c86a2722c.jpg?1562939686",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Land"
+      },
+      "scryfall_meta": {
+        "oracle_id": "2111588d-9af5-4a33-989e-b074d83f0463",
+        "scryfall_uri": "https://scryfall.com/card/arn/76/library-of-alexandria?utm_source=api"
+      }
+    },
+    {
+      "name": "Limited Resources",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/2/0/20ae3609-a3cc-486c-94f6-b8f647adfb47.jpg?1562087362",
+      "mtg_meta": {
+        "colors": [
+          "W"
+        ],
+        "mana_cost": "{W}",
+        "cmc": 1.0,
+        "type": "Enchantment"
+      },
+      "scryfall_meta": {
+        "oracle_id": "5b287dcc-f853-4df1-8ddf-5b8b2adc2873",
+        "scryfall_uri": "https://scryfall.com/card/exo/10/limited-resources?utm_source=api"
+      }
+    },
+    {
+      "name": "Lutri, the Spellchaser",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/f/b/fb1189c9-7842-466e-8238-1e02677d8494.jpg?1628801771",
+      "mtg_meta": {
+        "colors": [
+          "R",
+          "U"
+        ],
+        "mana_cost": "{1}{U/R}{U/R}",
+        "cmc": 3.0,
+        "type": "Legendary Creature — Elemental Otter"
+      },
+      "scryfall_meta": {
+        "oracle_id": "158a6225-a246-4fd6-aa57-0df8067b4383",
+        "scryfall_uri": "https://scryfall.com/card/iko/227/lutri-the-spellchaser?utm_source=api"
+      }
+    },
+    {
+      "name": "Mana Crypt",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/4/d/4d960186-4559-4af0-bd22-63baa15f8939.jpg?1727298349",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{0}",
+        "cmc": 0.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "2c63e4e1-89d2-4bc6-a232-94e75c4b1c8a",
+        "scryfall_uri": "https://scryfall.com/card/2xm/270/mana-crypt?utm_source=api"
+      }
+    },
+    {
+      "name": "Mox Emerald",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/a/4/a4db5af2-9caf-4493-b340-6d64021139e2.jpg?1559592068",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{0}",
+        "cmc": 0.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "376ee366-e082-402f-b4db-6592fcfcacd2",
+        "scryfall_uri": "https://scryfall.com/card/2ed/262/mox-emerald?utm_source=api"
+      }
+    },
+    {
+      "name": "Mox Jet",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/7/0/70d6c02e-0f48-4fb0-94f3-1fc92ee1814f.jpg?1559591936",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{0}",
+        "cmc": 0.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "0677f49e-f8bf-4349-af52-2ccde9287c2e",
+        "scryfall_uri": "https://scryfall.com/card/2ed/263/mox-jet?utm_source=api"
+      }
+    },
+    {
+      "name": "Mox Pearl",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/c/8/c84e8a0e-49a7-46f6-8a37-910e32753528.jpg?1559592233",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{0}",
+        "cmc": 0.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "824597b8-c89a-47ec-8526-7efc6e24ef0e",
+        "scryfall_uri": "https://scryfall.com/card/2ed/264/mox-pearl?utm_source=api"
+      }
+    },
+    {
+      "name": "Mox Ruby",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/2/1/21b7cbae-6647-4f36-b02d-5535ac88b1a6.jpg?1559592252",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{0}",
+        "cmc": 0.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "ed85fa82-e4fa-434b-92a8-36b6075708d1",
+        "scryfall_uri": "https://scryfall.com/card/2ed/265/mox-ruby?utm_source=api"
+      }
+    },
+    {
+      "name": "Mox Sapphire",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/f/7/f7d82f1d-631e-4668-9d10-7bf0ee515267.jpg?1559592066",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{0}",
+        "cmc": 0.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "d5ed1233-df87-4b90-8918-13922ec95249",
+        "scryfall_uri": "https://scryfall.com/card/2ed/266/mox-sapphire?utm_source=api"
+      }
+    },
+    {
+      "name": "Muzzio's Preparations",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/5/7/57c57a16-328d-4c87-adf0-7af8f3515339.jpg?1720517038",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "0e505699-8388-4862-93e0-059cef91cdd4",
+        "scryfall_uri": "https://scryfall.com/card/cns/7/muzzios-preparations?utm_source=api"
+      }
+    },
+    {
+      "name": "Nadu, Winged Wisdom",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/9/4/94b67489-5eb0-4406-9bf3-27e50dc632eb.jpg?1731574759",
+      "mtg_meta": {
+        "colors": [
+          "G",
+          "U"
+        ],
+        "mana_cost": "{1}{G}{U}",
+        "cmc": 3.0,
+        "type": "Legendary Creature — Bird Wizard"
+      },
+      "scryfall_meta": {
+        "oracle_id": "0ff11a61-6fe3-4c70-aba8-417023a5e54e",
+        "scryfall_uri": "https://scryfall.com/card/mh3/193/nadu-winged-wisdom?utm_source=api"
+      }
+    },
+    {
+      "name": "Natural Unity",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/5/e/5e633e76-ea92-46e5-a0c1-7930109c7712.jpg?1720517039",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "3deb19f6-c1a3-4bca-a6ae-df5d0b42a66e",
+        "scryfall_uri": "https://scryfall.com/card/cn2/9/natural-unity?utm_source=api"
+      }
+    },
+    {
+      "name": "Panoptic Mirror",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/5/0/50e945b0-e919-41bb-9bc5-f71ad531e8f1.jpg?1562636846",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{5}",
+        "cmc": 5.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "505cb78d-b292-4d16-b3f2-110164b4cc93",
+        "scryfall_uri": "https://scryfall.com/card/dst/136/panoptic-mirror?utm_source=api"
+      }
+    },
+    {
+      "name": "Paradox Engine",
+      "flavor_text": "\"One look at this glorious item convinced me that Kaladesh deserved my full attention. Sure enough, my time here has yielded exquisite fruit.\"\n—Tezzeret",
+      "image_url": "https://cards.scryfall.io/border_crop/front/f/d/fd8ccd81-9e11-47fa-8e16-064c52c24506.jpg?1576382376",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{5}",
+        "cmc": 5.0,
+        "type": "Legendary Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "d38937a6-ab1c-4de8-a278-d81a6ce0d921",
+        "scryfall_uri": "https://scryfall.com/card/aer/169/paradox-engine?utm_source=api"
+      }
+    },
+    {
+      "name": "Power Play",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/b/b/bbfca319-edc4-45f2-b208-35c8112ec918.jpg?1681082908",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "15710c57-369a-442b-b7ea-175f3d9d164d",
+        "scryfall_uri": "https://scryfall.com/card/cns/8/power-play?utm_source=api"
+      }
+    },
+    {
+      "name": "Pradesh Gypsies",
+      "flavor_text": "\"A mysterious people indeed. Their origins are as secret as their traditions.\"\n—Lord Magnus of Llanowar",
+      "image_url": "https://cards.scryfall.io/border_crop/front/a/4/a4c9b18c-4993-4ce1-b2bd-ab14c9f3aad7.jpg?1740685910",
+      "mtg_meta": {
+        "colors": [
+          "G"
+        ],
+        "mana_cost": "{2}{G}",
+        "cmc": 3.0,
+        "type": "Creature — Human Nomad"
+      },
+      "scryfall_meta": {
+        "oracle_id": "37c49483-bef6-47c6-9354-ead8560d48da",
+        "scryfall_uri": "https://scryfall.com/card/6ed/244/pradesh-gypsies?utm_source=api"
+      }
+    },
+    {
+      "name": "Primeval Titan",
+      "flavor_text": "When nature calls, *run*.",
+      "image_url": "https://cards.scryfall.io/border_crop/front/6/d/6d5537da-112e-4679-a113-b5d7ce32a66b.jpg?1562850064",
+      "mtg_meta": {
+        "colors": [
+          "G"
+        ],
+        "mana_cost": "{4}{G}{G}",
+        "cmc": 6.0,
+        "type": "Creature — Giant"
+      },
+      "scryfall_meta": {
+        "oracle_id": "ae83ef2c-960f-4c5b-97cc-52465c687c18",
+        "scryfall_uri": "https://scryfall.com/card/ima/183/primeval-titan?utm_source=api"
+      }
+    },
+    {
+      "name": "Prophet of Kruphix",
+      "flavor_text": "\"Time is fluid as a dance, and truth as fleeting.\"",
+      "image_url": "https://cards.scryfall.io/border_crop/front/4/5/45de923f-fdab-460c-96f4-f62aefa9ad73.jpg?1562817436",
+      "mtg_meta": {
+        "colors": [
+          "G",
+          "U"
+        ],
+        "mana_cost": "{3}{G}{U}",
+        "cmc": 5.0,
+        "type": "Creature — Human Wizard"
+      },
+      "scryfall_meta": {
+        "oracle_id": "372351fd-58f7-4cb8-8644-5fbc94ccb145",
+        "scryfall_uri": "https://scryfall.com/card/ths/199/prophet-of-kruphix?utm_source=api"
+      }
+    },
+    {
+      "name": "Rebirth",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/2/7/27c01d57-2bd4-433e-bea7-1acc70d14be3.jpg?1559604104",
+      "mtg_meta": {
+        "colors": [
+          "G"
+        ],
+        "mana_cost": "{3}{G}{G}{G}",
+        "cmc": 6.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "d17576b2-4a47-4848-8908-3152c8b4afe2",
+        "scryfall_uri": "https://scryfall.com/card/4ed/267/rebirth?utm_source=api"
+      }
+    },
+    {
+      "name": "Recurring Nightmare",
+      "flavor_text": "\"I am confined by sleep and defined by nightmare.\"\n—Crovax",
+      "image_url": "https://cards.scryfall.io/border_crop/front/c/8/c8173030-1c33-417c-b8e9-79231b6a85a7.jpg?1562088796",
+      "mtg_meta": {
+        "colors": [
+          "B"
+        ],
+        "mana_cost": "{2}{B}",
+        "cmc": 3.0,
+        "type": "Enchantment"
+      },
+      "scryfall_meta": {
+        "oracle_id": "a6708b11-1bcd-4208-a967-fe91f2e3313c",
+        "scryfall_uri": "https://scryfall.com/card/exo/72/recurring-nightmare?utm_source=api"
+      }
+    },
+    {
+      "name": "Rofellos, Llanowar Emissary",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/6/a/6aa5cc65-f8f1-4f6f-8b4e-2fedccbda684.jpg?1562444230",
+      "mtg_meta": {
+        "colors": [
+          "G"
+        ],
+        "mana_cost": "{G}{G}",
+        "cmc": 2.0,
+        "type": "Legendary Creature — Elf Druid"
+      },
+      "scryfall_meta": {
+        "oracle_id": "3015882b-4897-4d2c-8e33-6731c85a0d03",
+        "scryfall_uri": "https://scryfall.com/card/uds/118/rofellos-llanowar-emissary?utm_source=api"
+      }
+    },
+    {
+      "name": "Secrets of Paradise",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/1/5/15ace01c-93de-49e6-b9f9-276a2303f42f.jpg?1720517040",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "f309fe9f-0732-4b81-a342-a394225cbbb1",
+        "scryfall_uri": "https://scryfall.com/card/cns/10/secrets-of-paradise?utm_source=api"
+      }
+    },
+    {
+      "name": "Secret Summoning",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/7/8/7867db8a-5adc-4fe9-aabd-aa55935e3227.jpg?1681082913",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "1342ee23-c3a0-4578-833a-e30a9fc9141c",
+        "scryfall_uri": "https://scryfall.com/card/cns/9/secret-summoning?utm_source=api"
+      }
+    },
+    {
+      "name": "Sentinel Dispatch",
+      "flavor_text": "\"Unusual. Security also worth stealing.\"\n—Dack Fayden",
+      "image_url": "https://cards.scryfall.io/border_crop/front/2/b/2b5f4072-47d6-46e2-affb-3affb908124e.jpg?1720517041",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "7df49476-7b6c-4b5d-bede-463a7d2e0a58",
+        "scryfall_uri": "https://scryfall.com/card/cns/11/sentinel-dispatch?utm_source=api"
+      }
+    },
+    {
+      "name": "Shahrazad",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/0/0/0014def3-4063-4929-ac51-76aef1bb2a68.jpg?1562895012",
+      "mtg_meta": {
+        "colors": [
+          "W"
+        ],
+        "mana_cost": "{W}{W}",
+        "cmc": 2.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "fc04f621-338b-4d4c-bf57-5e5a00d990f0",
+        "scryfall_uri": "https://scryfall.com/card/arn/10/shahrazad?utm_source=api"
+      }
+    },
+    {
+      "name": "Sovereign's Realm",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/a/b/abefb30c-780d-4496-8fc6-6e1b80686c15.jpg?1681082918",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "c100a597-8186-4b07-b34a-e1eca2146838",
+        "scryfall_uri": "https://scryfall.com/card/cn2/10/sovereigns-realm?utm_source=api"
+      }
+    },
+    {
+      "name": "Stone-Throwing Devils",
+      "flavor_text": "Sometimes those with the most sin cast the first stones.",
+      "image_url": "https://cards.scryfall.io/border_crop/front/d/1/d1c387dd-1347-4443-91ce-b71f7ccdceba.jpg?1740685920",
+      "mtg_meta": {
+        "colors": [
+          "B"
+        ],
+        "mana_cost": "{B}",
+        "cmc": 1.0,
+        "type": "Creature — Devil"
+      },
+      "scryfall_meta": {
+        "oracle_id": "124c8663-21f3-4cd8-a060-9d04be35c43f",
+        "scryfall_uri": "https://scryfall.com/card/arn/33/stone-throwing-devils?utm_source=api"
+      }
+    },
+    {
+      "name": "Summoner's Bond",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/c/4/c4f16145-1ace-48a9-bd98-b0aea3e4bf62.jpg?1681082947",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "07b6326a-b73d-422b-bcb5-c508aa3fc558",
+        "scryfall_uri": "https://scryfall.com/card/cn2/11/summoners-bond?utm_source=api"
+      }
+    },
+    {
+      "name": "Sundering Titan",
+      "flavor_text": "\"Even if we defeat it, what remains to be saved?\"\n—Glissa Sunseeker",
+      "image_url": "https://cards.scryfall.io/border_crop/front/a/2/a2ebb5d3-72b1-411d-8c90-83dac5b37898.jpg?1618940470",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{8}",
+        "cmc": 8.0,
+        "type": "Artifact Creature — Golem"
+      },
+      "scryfall_meta": {
+        "oracle_id": "d17d071d-dbee-4d65-8435-137f35cd89ca",
+        "scryfall_uri": "https://scryfall.com/card/2xm/292/sundering-titan?utm_source=api"
+      }
+    },
+    {
+      "name": "Sway of the Stars",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/5/e/5eb58d9e-d181-4167-8b80-64b238183bdb.jpg?1562877344",
+      "mtg_meta": {
+        "colors": [
+          "U"
+        ],
+        "mana_cost": "{8}{U}{U}",
+        "cmc": 10.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "c4fccdd5-5b51-46b9-9937-9167c108743d",
+        "scryfall_uri": "https://scryfall.com/card/bok/54/sway-of-the-stars?utm_source=api"
+      }
+    },
+    {
+      "name": "Sylvan Primordial",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/0/4/0483c869-38dc-4b0b-82f3-dd08a1ab985f.jpg?1561814269",
+      "mtg_meta": {
+        "colors": [
+          "G"
+        ],
+        "mana_cost": "{5}{G}{G}",
+        "cmc": 7.0,
+        "type": "Creature — Avatar"
+      },
+      "scryfall_meta": {
+        "oracle_id": "52b88034-bf0f-4d29-b776-40ce421f1107",
+        "scryfall_uri": "https://scryfall.com/card/gtc/136/sylvan-primordial?utm_source=api"
+      }
+    },
+    {
+      "name": "Tempest Efreet",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/c/2/c2ea6dfe-64d6-451a-bd34-31546996e711.jpg?1559604155",
+      "mtg_meta": {
+        "colors": [
+          "R"
+        ],
+        "mana_cost": "{1}{R}{R}{R}",
+        "cmc": 4.0,
+        "type": "Creature — Efreet"
+      },
+      "scryfall_meta": {
+        "oracle_id": "272016e1-df1e-4376-9851-af8b1ecba2f4",
+        "scryfall_uri": "https://scryfall.com/card/4ed/225/tempest-efreet?utm_source=api"
+      }
+    },
+    {
+      "name": "Time Vault",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/0/b/0b64dd0f-2e99-41bd-87aa-f623582d64d0.jpg?1742288380",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "{2}",
+        "cmc": 2.0,
+        "type": "Artifact"
+      },
+      "scryfall_meta": {
+        "oracle_id": "99d4d99d-cf56-45aa-aa39-a250695612f2",
+        "scryfall_uri": "https://scryfall.com/card/2ed/275/time-vault?utm_source=api"
+      }
+    },
+    {
+      "name": "Time Walk",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/a/d/ade7d00d-4e7b-46e9-ace1-63f628a589fc.jpg?1559592011",
+      "mtg_meta": {
+        "colors": [
+          "U"
+        ],
+        "mana_cost": "{1}{U}",
+        "cmc": 2.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "d0209d3f-3f7e-4fd5-bce5-10bce6f29c86",
+        "scryfall_uri": "https://scryfall.com/card/2ed/84/time-walk?utm_source=api"
+      }
+    },
+    {
+      "name": "Timmerian Fiends",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/9/0/90643766-c92f-4a25-bd02-227f3c91f391.jpg?1562587763",
+      "mtg_meta": {
+        "colors": [
+          "B"
+        ],
+        "mana_cost": "{1}{B}{B}",
+        "cmc": 3.0,
+        "type": "Creature — Horror"
+      },
+      "scryfall_meta": {
+        "oracle_id": "2d2fab27-8793-4212-a512-c4f0c8c55eeb",
+        "scryfall_uri": "https://scryfall.com/card/hml/58/timmerian-fiends?utm_source=api"
+      }
+    },
+    {
+      "name": "Tinker",
+      "flavor_text": "\"I wonder how it feels to be bored.\"\n—Jhoira, artificer",
+      "image_url": "https://cards.scryfall.io/border_crop/front/7/d/7da23b15-dfb8-4267-9b33-d7a4c035c434.jpg?1562863289",
+      "mtg_meta": {
+        "colors": [
+          "U"
+        ],
+        "mana_cost": "{2}{U}",
+        "cmc": 3.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "254878f0-be90-4653-a395-0c41258fceaf",
+        "scryfall_uri": "https://scryfall.com/card/ulg/45/tinker?utm_source=api"
+      }
+    },
+    {
+      "name": "Tolarian Academy",
+      "flavor_text": "The academy worked with time—until time ran out.",
+      "image_url": "https://cards.scryfall.io/border_crop/front/a/d/ad7ac9a5-340f-4509-826c-7b9416d47887.jpg?1562931623",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Legendary Land"
+      },
+      "scryfall_meta": {
+        "oracle_id": "dba4fd31-8931-42dd-bd86-45479c2abf74",
+        "scryfall_uri": "https://scryfall.com/card/usg/330/tolarian-academy?utm_source=api"
+      }
+    },
+    {
+      "name": "Trade Secrets",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/5/8/58dadc78-fe87-40ac-94cb-128716d89d74.jpg?1592713134",
+      "mtg_meta": {
+        "colors": [
+          "U"
+        ],
+        "mana_cost": "{1}{U}{U}",
+        "cmc": 3.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "50885640-cdf1-4c62-b3bc-f37db6ab38b5",
+        "scryfall_uri": "https://scryfall.com/card/cmd/64/trade-secrets?utm_source=api"
+      }
+    },
+    {
+      "name": "Unexpected Potential",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/8/7/8789ef9e-f68c-4ff0-8621-47678038131b.jpg?1681082949",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "1acbbf61-edf7-4f67-968b-6832c2dd54d1",
+        "scryfall_uri": "https://scryfall.com/card/cns/12/unexpected-potential?utm_source=api"
+      }
+    },
+    {
+      "name": "Upheaval",
+      "flavor_text": "The calm comes after the storm.",
+      "image_url": "https://cards.scryfall.io/border_crop/front/b/e/befe74b1-c487-42bb-a1a1-4d13f3a86ff7.jpg?1626100271",
+      "mtg_meta": {
+        "colors": [
+          "U"
+        ],
+        "mana_cost": "{4}{U}{U}",
+        "cmc": 6.0,
+        "type": "Sorcery"
+      },
+      "scryfall_meta": {
+        "oracle_id": "7cafc972-a6f5-4cac-a3d3-8a3ae36ffb1e",
+        "scryfall_uri": "https://scryfall.com/card/mh2/270/upheaval?utm_source=api"
+      }
+    },
+    {
+      "name": "Weight Advantage",
+      "flavor_text": "When immovable object turns to unstoppable force, it's best to just get out of the way.",
+      "image_url": "https://cards.scryfall.io/border_crop/front/f/e/feef03a1-f19a-413b-ad86-0b357cf9c09c.jpg?1681082951",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "42bede0a-de6d-4de3-90ea-9d92b0fe8c64",
+        "scryfall_uri": "https://scryfall.com/card/cn2/12/weight-advantage?utm_source=api"
+      }
+    },
+    {
+      "name": "Worldknit",
+      "flavor_text": null,
+      "image_url": "https://cards.scryfall.io/border_crop/front/7/f/7f1fe849-b407-4252-b175-3f4afbbcea1b.jpg?1681082953",
+      "mtg_meta": {
+        "colors": [],
+        "mana_cost": "",
+        "cmc": 0.0,
+        "type": "Conspiracy"
+      },
+      "scryfall_meta": {
+        "oracle_id": "652f6d90-b158-4f9b-a15e-3e677905331d",
+        "scryfall_uri": "https://scryfall.com/card/cns/13/worldknit?utm_source=api"
+      }
+    },
+    {
+      "name": "Yawgmoth's Bargain",
+      "flavor_text": "He craves only one commodity.",
+      "image_url": "https://cards.scryfall.io/border_crop/front/8/6/86901bf2-7722-43f8-b879-7a30630371fa.jpg?1562444693",
+      "mtg_meta": {
+        "colors": [
+          "B"
+        ],
+        "mana_cost": "{4}{B}{B}",
+        "cmc": 6.0,
+        "type": "Enchantment"
+      },
+      "scryfall_meta": {
+        "oracle_id": "f7f76f39-a0de-4bda-86b6-0f291892fcec",
+        "scryfall_uri": "https://scryfall.com/card/uds/75/yawgmoths-bargain?utm_source=api"
+      }
     }
   ]
 }
