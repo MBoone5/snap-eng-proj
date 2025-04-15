@@ -15,14 +15,7 @@ function fetchCardsJSON(dataPath) {
 	});
 }
 
-
-/**
- * Entrypoint for our JS logic, loaded as a module into <HEAD>
- * @return {void} 
- */
-function main() {
-	console.log("Entered main, commencing misson...");
-
+async function populateCardElements() {
 	// Dynamically insert card content
 	fetchCardsJSON("./static/cards.json")
 		.then((data) => {
@@ -32,6 +25,17 @@ function main() {
 		.catch((error) => {
 			console.error("Error while fetching card data: ", error);
 		});
+}
+
+/**
+ * Entrypoint for our JS logic, loaded as a module into <HEAD>
+ * @return {void} 
+ */
+function main() {
+	console.log("Entered main, commencing misson...");
+
+  populateCardElements();
+
 
   // TODO: Add listeners module, or some other means of seperating concerns and bulk init of listeners
   quoteAlert();
