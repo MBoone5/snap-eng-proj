@@ -15,6 +15,21 @@ function fetchCardsJSON(dataPath) {
 	});
 }
 
+// FIX: Need to dig into this one
+async function generateCardObjects() {
+  let cardsCollection;
+
+  fetchCardsJSON("./static/cards.json")
+    .then((data) => {
+      cardsCollection = data.card_data.map(card => new Card(card));
+    })
+    .catch((error) => {
+			console.error("Error while generating card objects: ", error);
+    })
+
+    return cardsCollection;
+}
+
 async function populateCardElements() {
 	// Dynamically insert card content
 	fetchCardsJSON("./static/cards.json")
@@ -34,6 +49,7 @@ async function populateCardElements() {
 function main() {
 	console.log("Entered main, commencing misson...");
 
+  generateCardObjects();
   populateCardElements();
 
 
