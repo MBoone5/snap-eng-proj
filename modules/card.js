@@ -49,6 +49,24 @@ export class Card {
 	}
 
   /**
+   * Maps the color identity of a card to the corresponding mana icons as icon elements
+   * return {!Array<string>}
+   */
+  getManaIcons() {
+    const iconTemplate = "<i class='ms ms-shadow ms-${icon}'></i>";
+    const cardColors = this.mtgMeta.colors;
+
+    // early check for colorless
+    if (cardColors.length === 0) {
+      return [iconTemplate.replace("${icon}", "c")];
+    }
+    
+    const iconsList = cardColors.map((color) => iconTemplate.replace("${icon}", color.toLowerCase()));
+
+    return iconsList
+  }
+
+  /**
    * Generates a DOM element out of the card object 
    * @param {!Object} template - a DOM card element to use as a template
    * @return {!Object}
@@ -70,7 +88,9 @@ export class Card {
     // Populate meta info
     renderMeta.querySelector("#type").textContent = this.mtgMeta.type;
     renderMeta.querySelector("#flavor").textContent = this.flavorText;
-    renderMeta.querySelector("#color-info").textContent = this.mtgMeta.colors;
+
+    const colorIcons = this.getManaIcons().join("");
+    renderMeta.querySelector("#color-info").innerHTML = colorIcons;
     renderMeta.querySelector("#scryfall-link>a").href = this.scryfallMeta.scryfall_uri;
 
 	  console.log("new card:", renderTitle, "- html: ", render);
