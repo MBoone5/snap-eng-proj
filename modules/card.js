@@ -57,6 +57,7 @@ export class Card {
     const render = template.cloneNode(true);
     const renderTitle = render.querySelector("h2");
     const renderImage = render.querySelector("img");
+    const renderMeta = render.querySelector(".card-meta");
 
     render.style.display = "block" // Force block display in case there's been some responsive changes
 
@@ -66,6 +67,11 @@ export class Card {
     renderImage.src = this.imageURL;
     renderImage.alt = `Card Art - ${this.title}`;
 
+    // Populate meta info
+    renderMeta.querySelector("#type").textContent = this.mtgMeta.type;
+    renderMeta.querySelector("#flavor").textContent = this.flavorText;
+    renderMeta.querySelector("#color-info").textContent = this.mtgMeta.colors;
+    renderMeta.querySelector("#scryfall-link>a").href = this.scryfallMeta.scryfall_uri;
 
 	  console.log("new card:", renderTitle, "- html: ", render);
 
