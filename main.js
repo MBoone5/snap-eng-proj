@@ -1,4 +1,4 @@
-import { showCards } from "./modules/card.js";
+import { Card, showCards } from "./modules/card.js";
 import { quoteAlert } from "./modules/alerts.js";
 
 /**
@@ -19,17 +19,14 @@ function fetchCardsJSON(dataPath) {
 	});
 }
 
-function setListeners() {
-  document.addEventListener()
-}
-
 function main() {
 	console.log("Entered main, commencing misson...");
 
 	// Dynamically insert card content
 	fetchCardsJSON("./static/cards.json")
 		.then((data) => {
-			showCards(data.card_data);
+      const cardsCollection = data.card_data.map(card => new Card(card));
+      showCards(cardsCollection);
 		})
 		.catch((error) => {
 			console.error("Error while fetching card data: ", error);

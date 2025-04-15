@@ -15,7 +15,7 @@ export class Card {
 	 */
 	constructor(cardData) {
 		// TODO: Use camel case instead of snake case ;)
-		const { title, flavor_text, image_url, mtg_meta, scryfall_meta } = jsonData;
+		const { title, flavor_text, image_url, mtg_meta, scryfall_meta } = cardData;
 
 		/**
 		 * Title of the card.
@@ -47,41 +47,26 @@ export class Card {
 		 */
 		this.scryfall_meta = scryfall_meta;
 	}
-}
 
-/**
- * Function that accepts a card element, and updates it with the contents of a new Card object
- * @param {!Object} cardElement - The card element within the DOM to update
- * @param {!Card} cardObject - The card object to populate the element from
- * @returns {!Object}
- */
-function editCardContent(cardElement, cardObject) {
-	const newTitle = cardObject.title;
-	const newImageURL = cardObject.image_url;
+  // TODO: JSDoc
+  render(template) {
+    const render = template.cloneNode(true);
+    const renderTitle = render.querySelector("h2");
+    const renderImage = render.querySelector("img");
 
-	cardElement.style.display = "block";
-	cardElement.querySelector("h2").textContent = newTitle;
+    render.style.display = "block" // Force block display in case there's been some responsive changes
 
-	const cardImage = cardElement.querySelector("img");
-	cardImage.src = newImageURL;
-	cardImage.alt = `Card Art - ${newTitle}`;
-	console.log("new card:", newTitle, "- html: ", cardElement);
+    // Populate new element with card data
+    renderTitle.textContent = this.title;
 
-	return cardElement;
-}
+    renderImage.src = this.image_url;
+    renderImage.alt = `Card Art - ${this.title}`;
 
-/**
- * Accepts a card object, and returns a DOM element as a render of the object.
- * @param {!Card} cardObject - A well-formed Card object
- * @returns {!Object}
- */
-function renderCard(cardObject) {
-	// Copy an existing card as a template, and populate it with the data from the cardObject
-	// HACK: This is gonna cause problems with updates if we rely on this function.. probably?
-	const templateCard = document.querySelector(".card").cloneNode(true);
-	const newCard = editCardContent(templateCard, cardObject);
 
-	return newCard;
+	  console.log("new card:", renderTitle, "- html: ", render);
+
+    return render 
+  }
 }
 
 /**
@@ -95,17 +80,17 @@ export function showCards(cardData) {
 	const cardContainer = document.getElementById("card-container");
 	cardContainer.innerHTML = "";
 
-	// Empty document fragment to be our payload for this data
+  // Get template element
+	const templateCard = document.querySelector(".card");
+	
+  // Empty document fragment to be our payload for this data
 	const payload = document.createDocumentFragment();
 
-	// Iterate over our card objects, assemble a card element for each one
-	cardData.forEach((card) => {
-    // FIX: Refactor this, accept a 'CardCollection' sort of thing... might need to update card template
-		const renderedCard = renderCard(card);
-
-		// Add card to payload
-		payload.appendChild(renderedCard);
-	});
+  // Render elements for each card object
+  for (const cardObject of cardData) {
+    const renderedCard = cardObject.render(templateCard);
+    payload.appendChild(renderedCard);
+  } 
 
 	cardContainer.appendChild(payload);
 }
