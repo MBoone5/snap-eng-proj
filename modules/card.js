@@ -81,7 +81,7 @@ export class Card {
     const iconTemplate = "<i class='ms ms-cost ms-${icon}'></i>";
 
     // early check for colorless
-    if (this.colors.length === 0) {
+    if (!this.colors) {
       return [iconTemplate.replace("${icon}", "c")];
     }
     
