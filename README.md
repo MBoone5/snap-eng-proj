@@ -1,3 +1,20 @@
+## A note to the SEA/Next Shift Learning Team
+As called out in my submission, and as I'm sure its clear with the state of this branch, I regretfully did not submit a fully complete project before the deadline.
+
+It would be remiss of me to not at least provide some context to why that is; If I remember correctly I mentioned in my video interview that I had recently moved to LA for family reasons, but to be more specific my future mother-in-law has been in hospice care since November of last year, with the situation becoming quite dire in the past couple months. Over the weekend she had multiple transient ischemic attacks (TIA, akin to a stroke), and I spent what time I could at the hospital. This obviously didn't bode well for me completing this project in a timely manner.
+
+I mention this to be transparent regarding the situation, but I do want to emphasize that **I do not expect any sort of extension or exception**. I would be more than just disappointed to have not at least tried to put my best foot forwards with this assessment.
+That being said, I will leave this branch `main`, as it was submitted at the deadline. _However, I will be continuing to work on a [`dev` branch](https://github.com/MBoone5/snap-eng-proj/tree/dev) between now and the morning of April 16th, to bring this project close to a state of completion._ 
+
+If, at all, that work can be taken into account, I would be incredibly appreciative, but I have no expectation of such.
+
+Regardless, I am grateful to have been considered for this opportunity and for an empowering exercise in JavaScript (a language I haven't wrote in a couple years, but I think what I wrote is half-decent).
+
+Thanks,
+-- Sal
+
+---
+
 # SEA Stage 2 - Data Catalog Project
 
 This repository contains the instructions, requirements, and starter code for Stage Two of the Snap Engineering Academy application process.
