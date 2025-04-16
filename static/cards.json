@@ -1,7 +1,7 @@
 {
   "card_data": [
     {
-      "name": "Adriana's Valor",
+      "title": "Adriana's Valor",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/8/b/8bfd6889-90e2-49fe-bd30-7d850dc18db2.jpg?1720517028",
       "mtg_meta": {
@@ -16,7 +16,7 @@
       }
     },
     {
-      "name": "Advantageous Proclamation",
+      "title": "Advantageous Proclamation",
       "flavor_text": "\"The beneficent council deems you worthy of favor. They hope this doesn't provoke envy from your peers.\"",
       "image_url": "https://cards.scryfall.io/border_crop/front/f/8/f8c37fe8-43b3-454e-a70b-5b0d0f396a33.jpg?1681082854",
       "mtg_meta": {
@@ -31,7 +31,7 @@
       }
     },
     {
-      "name": "Amulet of Quoz",
+      "title": "Amulet of Quoz",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/7/6/764ec6a8-a878-446c-b7e4-6026c2a3e9a4.jpg?1562916864",
       "mtg_meta": {
@@ -46,7 +46,7 @@
       }
     },
     {
-      "name": "Ancestral Recall",
+      "title": "Ancestral Recall",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/2/d/2dd41293-d7c8-4422-9f0c-b3e96350f5c9.jpg?1559592144",
       "mtg_meta": {
@@ -63,7 +63,7 @@
       }
     },
     {
-      "name": "Assemble the Rank and Vile",
+      "title": "Assemble the Rank and Vile",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/7/0/7023889e-924f-495f-b189-82592989d659.jpg?1720517032",
       "mtg_meta": {
@@ -78,7 +78,7 @@
       }
     },
     {
-      "name": "Backup Plan",
+      "title": "Backup Plan",
       "flavor_text": "\"In the market for an alternative, friend?\"",
       "image_url": "https://cards.scryfall.io/border_crop/front/8/4/84c5a45a-adc2-41f9-893c-58a03bebbf0c.jpg?1681082857",
       "mtg_meta": {
@@ -93,7 +93,7 @@
       }
     },
     {
-      "name": "Balance",
+      "title": "Balance",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/c/e/ce648aa3-098b-4af0-a433-fd290bc85904.jpg?1737999968",
       "mtg_meta": {
@@ -110,7 +110,7 @@
       }
     },
     {
-      "name": "Biorhythm",
+      "title": "Biorhythm",
       "flavor_text": "\"I have seen life's purpose, and now it is my own.\"\n—Kamahl, druid acolyte",
       "image_url": "https://cards.scryfall.io/border_crop/front/1/7/17d1a10f-ce21-4914-9984-c7c559161230.jpg?1593017425",
       "mtg_meta": {
@@ -127,7 +127,7 @@
       }
     },
     {
-      "name": "Black Lotus",
+      "title": "Black Lotus",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/4/a/4a2e428c-dd25-484c-bbc8-2d6ce10ef42c.jpg?1559591808",
       "mtg_meta": {
@@ -142,7 +142,7 @@
       }
     },
     {
-      "name": "Brago's Favor",
+      "title": "Brago's Favor",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/9/b/9bb6ece9-2038-4dbc-83aa-01ab4d7980b4.jpg?1720517033",
       "mtg_meta": {
@@ -157,7 +157,7 @@
       }
     },
     {
-      "name": "Braids, Cabal Minion",
+      "title": "Braids, Cabal Minion",
       "flavor_text": "\"Home is where you can find a decent graveyard and strangers can disappear without awkward questions.\"",
       "image_url": "https://cards.scryfall.io/border_crop/front/2/7/27691efa-052d-4afe-b9ef-159858ca660f.jpg?1626100340",
       "mtg_meta": {
@@ -174,7 +174,7 @@
       }
     },
     {
-      "name": "Bronze Tablet",
+      "title": "Bronze Tablet",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/c/a/cad56033-c1f9-4477-9dd6-ba7009c30593.jpg?1559603594",
       "mtg_meta": {
@@ -189,7 +189,7 @@
       }
     },
     {
-      "name": "Channel",
+      "title": "Channel",
       "flavor_text": "To some mages, the meaning of life is less important than how much is left.",
       "image_url": "https://cards.scryfall.io/border_crop/front/c/e/ce54c7c1-3401-4414-8da0-5846cb0ae1b4.jpg?1701989326",
       "mtg_meta": {
@@ -206,7 +206,7 @@
       }
     },
     {
-      "name": "Chaos Orb",
+      "title": "Chaos Orb",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/7/a/7a601041-926f-40fd-8106-39099b87806f.jpg?1559592122",
       "mtg_meta": {
@@ -221,7 +221,7 @@
       }
     },
     {
-      "name": "Cleanse",
+      "title": "Cleanse",
       "flavor_text": "The clouds broke and the sun's rays burst forth; each foul beast in its turn faltered, and was gone.",
       "image_url": "https://cards.scryfall.io/border_crop/front/2/f/2fbd611b-ac97-4516-bad7-cc9ee4ef74f7.jpg?1591836785",
       "mtg_meta": {
@@ -238,7 +238,7 @@
       }
     },
     {
-      "name": "Coalition Victory",
+      "title": "Coalition Victory",
       "flavor_text": "\"You can build a perfect machine out of imperfect parts.\"\n—Urza",
       "image_url": "https://cards.scryfall.io/border_crop/front/4/4/446824f7-dc42-42da-8bd5-6c37f3358d65.jpg?1562775464",
       "mtg_meta": {
@@ -259,7 +259,7 @@
       }
     },
     {
-      "name": "Contract from Below",
+      "title": "Contract from Below",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/e/1/e1e33690-b851-404a-9cde-d00235be5aa5.jpg?1610146838",
       "mtg_meta": {
@@ -276,7 +276,7 @@
       }
     },
     {
-      "name": "Crusade",
+      "title": "Crusade",
       "flavor_text": "\"Finally, I understand. Home isn't where you rest. It's what you fight for.\"\n—Elspeth Tirel",
       "image_url": "https://cards.scryfall.io/border_crop/front/b/9/b99452c0-5d1c-4a73-90b6-0ec3ac0af893.jpg?1740685902",
       "mtg_meta": {
@@ -293,7 +293,7 @@
       }
     },
     {
-      "name": "Darkpact",
+      "title": "Darkpact",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/f/9/f9ab1c5e-e36e-4a2a-9e6d-c993edc17c03.jpg?1610146891",
       "mtg_meta": {
@@ -310,7 +310,7 @@
       }
     },
     {
-      "name": "Demonic Attorney",
+      "title": "Demonic Attorney",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/2/3/233b1104-91b3-4949-8356-baf6e80ab07e.jpg?1610146895",
       "mtg_meta": {
@@ -327,7 +327,7 @@
       }
     },
     {
-      "name": "Dockside Extortionist",
+      "title": "Dockside Extortionist",
       "flavor_text": "\"It's just business.\"",
       "image_url": "https://cards.scryfall.io/border_crop/front/9/e/9e2e3efb-75cb-430f-b9f4-cb58f3aeb91b.jpg?1727093692",
       "mtg_meta": {
@@ -344,7 +344,7 @@
       }
     },
     {
-      "name": "Double Stroke",
+      "title": "Double Stroke",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/b/0/b0ec6d79-8a22-49d5-ac00-7fd60b278a4d.jpg?1681082859",
       "mtg_meta": {
@@ -359,7 +359,7 @@
       }
     },
     {
-      "name": "Echoing Boon",
+      "title": "Echoing Boon",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/1/6/165dd3b0-0878-448e-b922-019d0ba372d0.jpg?1681082860",
       "mtg_meta": {
@@ -374,7 +374,7 @@
       }
     },
     {
-      "name": "Emissary's Ploy",
+      "title": "Emissary's Ploy",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/c/e/ce5f3b5c-feb8-4304-852f-01c467d6517c.jpg?1681082864",
       "mtg_meta": {
@@ -389,7 +389,7 @@
       }
     },
     {
-      "name": "Emrakul, the Aeons Torn",
+      "title": "Emrakul, the Aeons Torn",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/2/4/249db4d4-2542-47ee-a216-e13ffbc2319c.jpg?1673146896",
       "mtg_meta": {
@@ -404,7 +404,7 @@
       }
     },
     {
-      "name": "Erayo, Soratami Ascendant // Erayo's Essence",
+      "title": "Erayo, Soratami Ascendant // Erayo's Essence",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/0/b/0b61d772-2d8b-4acf-9dd2-b2e8b03538c8.jpg?1737573031",
       "mtg_meta": {
@@ -421,7 +421,7 @@
       }
     },
     {
-      "name": "Falling Star",
+      "title": "Falling Star",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/f/2/f2b9983e-20d4-4d12-9e2c-ec6d9a345787.jpg?1562861838",
       "mtg_meta": {
@@ -438,7 +438,7 @@
       }
     },
     {
-      "name": "Fastbond",
+      "title": "Fastbond",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/9/d/9ded52aa-67a2-4476-a278-1eea936b3248.jpg?1559592914",
       "mtg_meta": {
@@ -455,7 +455,7 @@
       }
     },
     {
-      "name": "Flash",
+      "title": "Flash",
       "flavor_text": "No tactic transforms a battle like a well-timed carnivore.",
       "image_url": "https://cards.scryfall.io/border_crop/front/d/3/d31459c2-9656-4e9a-bb72-71a910e8570b.jpg?1587347037",
       "mtg_meta": {
@@ -472,7 +472,7 @@
       }
     },
     {
-      "name": "Gifts Ungiven",
+      "title": "Gifts Ungiven",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/c/c/cc950b6c-0346-4939-b36b-9f10a75f7a32.jpg?1685966742",
       "mtg_meta": {
@@ -489,7 +489,7 @@
       }
     },
     {
-      "name": "Golos, Tireless Pilgrim",
+      "title": "Golos, Tireless Pilgrim",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/1/f/1fa48620-4c3d-4f75-be1f-c12c4aa59f51.jpg?1631531828",
       "mtg_meta": {
@@ -504,7 +504,7 @@
       }
     },
     {
-      "name": "Griselbrand",
+      "title": "Griselbrand",
       "flavor_text": "\"Avacyn emerged from the broken Helvault, but her freedom came at a price—him.\"\n—Thalia, Knight-Cathar",
       "image_url": "https://cards.scryfall.io/border_crop/front/4/0/4069e510-f3f3-4668-9f13-3546fa9bc7c3.jpg?1736467973",
       "mtg_meta": {
@@ -521,7 +521,7 @@
       }
     },
     {
-      "name": "Hired Heist",
+      "title": "Hired Heist",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/d/3/d3914468-d769-4fe3-ae18-0caee9eb1502.jpg?1720517035",
       "mtg_meta": {
@@ -536,7 +536,7 @@
       }
     },
     {
-      "name": "Hold the Perimeter",
+      "title": "Hold the Perimeter",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/0/0/00717f7c-0778-4a02-b6c0-b3c3f07e75a9.jpg?1681082896",
       "mtg_meta": {
@@ -551,7 +551,7 @@
       }
     },
     {
-      "name": "Hullbreacher",
+      "title": "Hullbreacher",
       "flavor_text": "\"I don't need a map to find riches.\"",
       "image_url": "https://cards.scryfall.io/border_crop/front/4/d/4df8aabc-7fcb-4b7b-980b-18f499e6c170.jpg?1626088514",
       "mtg_meta": {
@@ -568,7 +568,7 @@
       }
     },
     {
-      "name": "Hymn of the Wilds",
+      "title": "Hymn of the Wilds",
       "flavor_text": "Many attempt to speak with nature. Selvala speaks less, and nature answers more.",
       "image_url": "https://cards.scryfall.io/border_crop/front/e/7/e7902666-21f2-4590-9dca-e95858dbde70.jpg?1681082896",
       "mtg_meta": {
@@ -583,7 +583,7 @@
       }
     },
     {
-      "name": "Immediate Action",
+      "title": "Immediate Action",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/1/6/167c6740-0625-4987-8fac-516aab564ca1.jpg?1720517036",
       "mtg_meta": {
@@ -598,7 +598,7 @@
       }
     },
     {
-      "name": "Imprison",
+      "title": "Imprison",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/1/2/12671381-beb7-41b8-9484-97f8aca5c981.jpg?1740685906",
       "mtg_meta": {
@@ -615,7 +615,7 @@
       }
     },
     {
-      "name": "Incendiary Dissent",
+      "title": "Incendiary Dissent",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/c/f/cfbe340b-ca40-4604-bdc6-4b00e7444df4.jpg?1720517037",
       "mtg_meta": {
@@ -630,7 +630,7 @@
       }
     },
     {
-      "name": "Invoke Prejudice",
+      "title": "Invoke Prejudice",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/9/0/903d9fde-d7da-4a0e-a337-b63023c6d74b.jpg?1740685915",
       "mtg_meta": {
@@ -647,7 +647,7 @@
       }
     },
     {
-      "name": "Iona, Shield of Emeria",
+      "title": "Iona, Shield of Emeria",
       "flavor_text": "No more shall the righteous cower before evil.",
       "image_url": "https://cards.scryfall.io/border_crop/front/6/1/6197b59e-1652-496c-a038-e2eb88ecf017.jpg?1562584407",
       "mtg_meta": {
@@ -664,7 +664,7 @@
       }
     },
     {
-      "name": "Iterative Analysis",
+      "title": "Iterative Analysis",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/2/1/212a39fa-e1b3-4ae3-945f-6d8cda6372ae.jpg?1681082904",
       "mtg_meta": {
@@ -679,7 +679,7 @@
       }
     },
     {
-      "name": "Jeweled Bird",
+      "title": "Jeweled Bird",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/d/7/d78e61e5-9313-4c83-af38-98849aea4e42.jpg?1562938280",
       "mtg_meta": {
@@ -694,7 +694,7 @@
       }
     },
     {
-      "name": "Jeweled Lotus",
+      "title": "Jeweled Lotus",
       "flavor_text": "\"I've seen my share of baubles, minister. Whatever ostentatious bit of glitter you have there won't convince me to ... Oh my.\"\n—Emperor Ayrelion",
       "image_url": "https://cards.scryfall.io/border_crop/front/d/7/d7183700-6941-4a3d-a581-4f33bea795e9.jpg?1727093687",
       "mtg_meta": {
@@ -709,7 +709,7 @@
       }
     },
     {
-      "name": "Jihad",
+      "title": "Jihad",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/b/6/b6c7705a-2987-4ef1-92b1-2c55d989ec6f.jpg?1740685879",
       "mtg_meta": {
@@ -726,7 +726,7 @@
       }
     },
     {
-      "name": "Karakas",
+      "title": "Karakas",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/e/5/e52214e1-404a-405a-b08e-20e13c087338.jpg?1559959289",
       "mtg_meta": {
@@ -741,7 +741,7 @@
       }
     },
     {
-      "name": "Leovold, Emissary of Trest",
+      "title": "Leovold, Emissary of Trest",
       "flavor_text": "\"I'm sure we can come to an arrangement.\"",
       "image_url": "https://cards.scryfall.io/border_crop/front/c/e/cedfc5b7-9242-4680-b284-debc8b5a9bc7.jpg?1559959275",
       "mtg_meta": {
@@ -760,7 +760,7 @@
       }
     },
     {
-      "name": "Library of Alexandria",
+      "title": "Library of Alexandria",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/e/e/ee266113-34ce-4189-84e7-ee2c86a2722c.jpg?1562939686",
       "mtg_meta": {
@@ -775,7 +775,7 @@
       }
     },
     {
-      "name": "Limited Resources",
+      "title": "Limited Resources",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/2/0/20ae3609-a3cc-486c-94f6-b8f647adfb47.jpg?1562087362",
       "mtg_meta": {
@@ -792,7 +792,7 @@
       }
     },
     {
-      "name": "Lutri, the Spellchaser",
+      "title": "Lutri, the Spellchaser",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/f/b/fb1189c9-7842-466e-8238-1e02677d8494.jpg?1628801771",
       "mtg_meta": {
@@ -810,7 +810,7 @@
       }
     },
     {
-      "name": "Mana Crypt",
+      "title": "Mana Crypt",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/4/d/4d960186-4559-4af0-bd22-63baa15f8939.jpg?1727298349",
       "mtg_meta": {
@@ -825,7 +825,7 @@
       }
     },
     {
-      "name": "Mox Emerald",
+      "title": "Mox Emerald",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/a/4/a4db5af2-9caf-4493-b340-6d64021139e2.jpg?1559592068",
       "mtg_meta": {
@@ -840,7 +840,7 @@
       }
     },
     {
-      "name": "Mox Jet",
+      "title": "Mox Jet",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/7/0/70d6c02e-0f48-4fb0-94f3-1fc92ee1814f.jpg?1559591936",
       "mtg_meta": {
@@ -855,7 +855,7 @@
       }
     },
     {
-      "name": "Mox Pearl",
+      "title": "Mox Pearl",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/c/8/c84e8a0e-49a7-46f6-8a37-910e32753528.jpg?1559592233",
       "mtg_meta": {
@@ -870,7 +870,7 @@
       }
     },
     {
-      "name": "Mox Ruby",
+      "title": "Mox Ruby",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/2/1/21b7cbae-6647-4f36-b02d-5535ac88b1a6.jpg?1559592252",
       "mtg_meta": {
@@ -885,7 +885,7 @@
       }
     },
     {
-      "name": "Mox Sapphire",
+      "title": "Mox Sapphire",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/f/7/f7d82f1d-631e-4668-9d10-7bf0ee515267.jpg?1559592066",
       "mtg_meta": {
@@ -900,7 +900,7 @@
       }
     },
     {
-      "name": "Muzzio's Preparations",
+      "title": "Muzzio's Preparations",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/5/7/57c57a16-328d-4c87-adf0-7af8f3515339.jpg?1720517038",
       "mtg_meta": {
@@ -915,7 +915,7 @@
       }
     },
     {
-      "name": "Nadu, Winged Wisdom",
+      "title": "Nadu, Winged Wisdom",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/9/4/94b67489-5eb0-4406-9bf3-27e50dc632eb.jpg?1731574759",
       "mtg_meta": {
@@ -933,7 +933,7 @@
       }
     },
     {
-      "name": "Natural Unity",
+      "title": "Natural Unity",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/5/e/5e633e76-ea92-46e5-a0c1-7930109c7712.jpg?1720517039",
       "mtg_meta": {
@@ -948,7 +948,7 @@
       }
     },
     {
-      "name": "Panoptic Mirror",
+      "title": "Panoptic Mirror",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/5/0/50e945b0-e919-41bb-9bc5-f71ad531e8f1.jpg?1562636846",
       "mtg_meta": {
@@ -963,7 +963,7 @@
       }
     },
     {
-      "name": "Paradox Engine",
+      "title": "Paradox Engine",
       "flavor_text": "\"One look at this glorious item convinced me that Kaladesh deserved my full attention. Sure enough, my time here has yielded exquisite fruit.\"\n—Tezzeret",
       "image_url": "https://cards.scryfall.io/border_crop/front/f/d/fd8ccd81-9e11-47fa-8e16-064c52c24506.jpg?1576382376",
       "mtg_meta": {
@@ -978,7 +978,7 @@
       }
     },
     {
-      "name": "Power Play",
+      "title": "Power Play",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/b/b/bbfca319-edc4-45f2-b208-35c8112ec918.jpg?1681082908",
       "mtg_meta": {
@@ -993,7 +993,7 @@
       }
     },
     {
-      "name": "Pradesh Gypsies",
+      "title": "Pradesh Gypsies",
       "flavor_text": "\"A mysterious people indeed. Their origins are as secret as their traditions.\"\n—Lord Magnus of Llanowar",
       "image_url": "https://cards.scryfall.io/border_crop/front/a/4/a4c9b18c-4993-4ce1-b2bd-ab14c9f3aad7.jpg?1740685910",
       "mtg_meta": {
@@ -1010,7 +1010,7 @@
       }
     },
     {
-      "name": "Primeval Titan",
+      "title": "Primeval Titan",
       "flavor_text": "When nature calls, *run*.",
       "image_url": "https://cards.scryfall.io/border_crop/front/6/d/6d5537da-112e-4679-a113-b5d7ce32a66b.jpg?1562850064",
       "mtg_meta": {
@@ -1027,7 +1027,7 @@
       }
     },
     {
-      "name": "Prophet of Kruphix",
+      "title": "Prophet of Kruphix",
       "flavor_text": "\"Time is fluid as a dance, and truth as fleeting.\"",
       "image_url": "https://cards.scryfall.io/border_crop/front/4/5/45de923f-fdab-460c-96f4-f62aefa9ad73.jpg?1562817436",
       "mtg_meta": {
@@ -1045,7 +1045,7 @@
       }
     },
     {
-      "name": "Rebirth",
+      "title": "Rebirth",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/2/7/27c01d57-2bd4-433e-bea7-1acc70d14be3.jpg?1559604104",
       "mtg_meta": {
@@ -1062,7 +1062,7 @@
       }
     },
     {
-      "name": "Recurring Nightmare",
+      "title": "Recurring Nightmare",
       "flavor_text": "\"I am confined by sleep and defined by nightmare.\"\n—Crovax",
       "image_url": "https://cards.scryfall.io/border_crop/front/c/8/c8173030-1c33-417c-b8e9-79231b6a85a7.jpg?1562088796",
       "mtg_meta": {
@@ -1079,7 +1079,7 @@
       }
     },
     {
-      "name": "Rofellos, Llanowar Emissary",
+      "title": "Rofellos, Llanowar Emissary",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/6/a/6aa5cc65-f8f1-4f6f-8b4e-2fedccbda684.jpg?1562444230",
       "mtg_meta": {
@@ -1096,7 +1096,7 @@
       }
     },
     {
-      "name": "Secrets of Paradise",
+      "title": "Secrets of Paradise",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/1/5/15ace01c-93de-49e6-b9f9-276a2303f42f.jpg?1720517040",
       "mtg_meta": {
@@ -1111,7 +1111,7 @@
       }
     },
     {
-      "name": "Secret Summoning",
+      "title": "Secret Summoning",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/7/8/7867db8a-5adc-4fe9-aabd-aa55935e3227.jpg?1681082913",
       "mtg_meta": {
@@ -1126,7 +1126,7 @@
       }
     },
     {
-      "name": "Sentinel Dispatch",
+      "title": "Sentinel Dispatch",
       "flavor_text": "\"Unusual. Security also worth stealing.\"\n—Dack Fayden",
       "image_url": "https://cards.scryfall.io/border_crop/front/2/b/2b5f4072-47d6-46e2-affb-3affb908124e.jpg?1720517041",
       "mtg_meta": {
@@ -1141,7 +1141,7 @@
       }
     },
     {
-      "name": "Shahrazad",
+      "title": "Shahrazad",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/0/0/0014def3-4063-4929-ac51-76aef1bb2a68.jpg?1562895012",
       "mtg_meta": {
@@ -1158,7 +1158,7 @@
       }
     },
     {
-      "name": "Sovereign's Realm",
+      "title": "Sovereign's Realm",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/a/b/abefb30c-780d-4496-8fc6-6e1b80686c15.jpg?1681082918",
       "mtg_meta": {
@@ -1173,7 +1173,7 @@
       }
     },
     {
-      "name": "Stone-Throwing Devils",
+      "title": "Stone-Throwing Devils",
       "flavor_text": "Sometimes those with the most sin cast the first stones.",
       "image_url": "https://cards.scryfall.io/border_crop/front/d/1/d1c387dd-1347-4443-91ce-b71f7ccdceba.jpg?1740685920",
       "mtg_meta": {
@@ -1190,7 +1190,7 @@
       }
     },
     {
-      "name": "Summoner's Bond",
+      "title": "Summoner's Bond",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/c/4/c4f16145-1ace-48a9-bd98-b0aea3e4bf62.jpg?1681082947",
       "mtg_meta": {
@@ -1205,7 +1205,7 @@
       }
     },
     {
-      "name": "Sundering Titan",
+      "title": "Sundering Titan",
       "flavor_text": "\"Even if we defeat it, what remains to be saved?\"\n—Glissa Sunseeker",
       "image_url": "https://cards.scryfall.io/border_crop/front/a/2/a2ebb5d3-72b1-411d-8c90-83dac5b37898.jpg?1618940470",
       "mtg_meta": {
@@ -1220,7 +1220,7 @@
       }
     },
     {
-      "name": "Sway of the Stars",
+      "title": "Sway of the Stars",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/5/e/5eb58d9e-d181-4167-8b80-64b238183bdb.jpg?1562877344",
       "mtg_meta": {
@@ -1237,7 +1237,7 @@
       }
     },
     {
-      "name": "Sylvan Primordial",
+      "title": "Sylvan Primordial",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/0/4/0483c869-38dc-4b0b-82f3-dd08a1ab985f.jpg?1561814269",
       "mtg_meta": {
@@ -1254,7 +1254,7 @@
       }
     },
     {
-      "name": "Tempest Efreet",
+      "title": "Tempest Efreet",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/c/2/c2ea6dfe-64d6-451a-bd34-31546996e711.jpg?1559604155",
       "mtg_meta": {
@@ -1271,7 +1271,7 @@
       }
     },
     {
-      "name": "Time Vault",
+      "title": "Time Vault",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/0/b/0b64dd0f-2e99-41bd-87aa-f623582d64d0.jpg?1742288380",
       "mtg_meta": {
@@ -1286,7 +1286,7 @@
       }
     },
     {
-      "name": "Time Walk",
+      "title": "Time Walk",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/a/d/ade7d00d-4e7b-46e9-ace1-63f628a589fc.jpg?1559592011",
       "mtg_meta": {
@@ -1303,7 +1303,7 @@
       }
     },
     {
-      "name": "Timmerian Fiends",
+      "title": "Timmerian Fiends",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/9/0/90643766-c92f-4a25-bd02-227f3c91f391.jpg?1562587763",
       "mtg_meta": {
@@ -1320,7 +1320,7 @@
       }
     },
     {
-      "name": "Tinker",
+      "title": "Tinker",
       "flavor_text": "\"I wonder how it feels to be bored.\"\n—Jhoira, artificer",
       "image_url": "https://cards.scryfall.io/border_crop/front/7/d/7da23b15-dfb8-4267-9b33-d7a4c035c434.jpg?1562863289",
       "mtg_meta": {
@@ -1337,7 +1337,7 @@
       }
     },
     {
-      "name": "Tolarian Academy",
+      "title": "Tolarian Academy",
       "flavor_text": "The academy worked with time—until time ran out.",
       "image_url": "https://cards.scryfall.io/border_crop/front/a/d/ad7ac9a5-340f-4509-826c-7b9416d47887.jpg?1562931623",
       "mtg_meta": {
@@ -1352,7 +1352,7 @@
       }
     },
     {
-      "name": "Trade Secrets",
+      "title": "Trade Secrets",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/5/8/58dadc78-fe87-40ac-94cb-128716d89d74.jpg?1592713134",
       "mtg_meta": {
@@ -1369,7 +1369,7 @@
       }
     },
     {
-      "name": "Unexpected Potential",
+      "title": "Unexpected Potential",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/8/7/8789ef9e-f68c-4ff0-8621-47678038131b.jpg?1681082949",
       "mtg_meta": {
@@ -1384,7 +1384,7 @@
       }
     },
     {
-      "name": "Upheaval",
+      "title": "Upheaval",
       "flavor_text": "The calm comes after the storm.",
       "image_url": "https://cards.scryfall.io/border_crop/front/b/e/befe74b1-c487-42bb-a1a1-4d13f3a86ff7.jpg?1626100271",
       "mtg_meta": {
@@ -1401,7 +1401,7 @@
       }
     },
     {
-      "name": "Weight Advantage",
+      "title": "Weight Advantage",
       "flavor_text": "When immovable object turns to unstoppable force, it's best to just get out of the way.",
       "image_url": "https://cards.scryfall.io/border_crop/front/f/e/feef03a1-f19a-413b-ad86-0b357cf9c09c.jpg?1681082951",
       "mtg_meta": {
@@ -1416,7 +1416,7 @@
       }
     },
     {
-      "name": "Worldknit",
+      "title": "Worldknit",
       "flavor_text": null,
       "image_url": "https://cards.scryfall.io/border_crop/front/7/f/7f1fe849-b407-4252-b175-3f4afbbcea1b.jpg?1681082953",
       "mtg_meta": {
@@ -1431,7 +1431,7 @@
       }
     },
     {
-      "name": "Yawgmoth's Bargain",
+      "title": "Yawgmoth's Bargain",
       "flavor_text": "He craves only one commodity.",
       "image_url": "https://cards.scryfall.io/border_crop/front/8/6/86901bf2-7722-43f8-b879-7a30630371fa.jpg?1562444693",
       "mtg_meta": {
