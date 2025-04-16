@@ -1,60 +1,55 @@
-import { Card, showCards } from "./modules/card.js";
+/// <reference path="./types.js" />
+/// <reference path="./modules/card.js" />
+
 import { quoteAlert } from "./modules/alerts.js";
+import { Card, showCards } from "./modules/card.js";
 
 /**
  * Function to fetch our static card data
  *
- * @param {string} dataPath - Path to our card data
+ * @param {!string} dataPath - Path to our card data
+ * @return {Promise<Object<string, Array<CardJSON>>>}
  */
-function fetchCardsJSON(dataPath) {
+async function fetchCardsJSON(dataPath) {
 	return fetch(dataPath).then((response) => {
 		if (response.ok === false) {
 			throw new Error(`Unable to fetch card data. Status: ${response.status}`);
 		}
+
 		return response.json();
 	});
 }
 
-// FIX: Need to dig into this one
+/**
+ * Function to map raw json data of cards into Card objects
+ *
+ * @returns {Promise<Array<Card>>}
+ */
 async function generateCardObjects() {
-  let cardsCollection;
+	const cardsAsJSON = await fetchCardsJSON("./static/cards.json");
 
-  fetchCardsJSON("./static/cards.json")
-    .then((data) => {
-      cardsCollection = data.card_data.map(card => new Card(card));
-    })
-    .catch((error) => {
-			console.error("Error while generating card objects: ", error);
-    })
-
-    return cardsCollection;
+  console.log(`Type: ${typeof cardsAsJSON}`)
+  console.log(cardsAsJSON)
+	const cardCollection = cardsAsJSON.card_data.map((card) => new Card(card));
+	return cardCollection;
 }
 
 async function populateCardElements() {
 	// Dynamically insert card content
-	fetchCardsJSON("./static/cards.json")
-		.then((data) => {
-      const cardsCollection = data.card_data.map(card => new Card(card));
-      showCards(cardsCollection);
-		})
-		.catch((error) => {
-			console.error("Error while fetching card data: ", error);
-		});
+	const cardCollection = await generateCardObjects();
+	showCards(cardCollection);
 }
 
 /**
  * Entrypoint for our JS logic, loaded as a module into <HEAD>
- * @return {void} 
+ * @return {void}
  */
 function main() {
 	console.log("Entered main, commencing misson...");
+	populateCardElements();
 
-  generateCardObjects();
-  populateCardElements();
-
-
-  // TODO: Add listeners module, or some other means of seperating concerns and bulk init of listeners
-  quoteAlert();
+	// TODO: Add listeners module, or some other means of seperating concerns and bulk init of listeners
+	quoteAlert();
 }
 
 // This calls main() function when the doc has loaded

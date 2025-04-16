@@ -13,26 +13,26 @@ export class Card {
 	/**
 	 * Constructor method for Card objects
 	 * @constructor
-	 * @param {!CardJSON} cardJSON - JSON Object containing the card data
+	 * @param {CardJSON} cardJSON - JSON Object containing the card data
 	 */
 	constructor(cardJSON) {
 		const { title, flavor_text, image_url, mtg_meta, scryfall_meta } = cardJSON;
 
     /**
      * ID of this card and the specific printing, within the scryfall DB
-     * @type {!string}
+     * @type {string}
      */
     this.id = scryfall_meta.oracle_id;
 
     /**
      * URL for the scryfall page for this card
-     * @type {!string}
+     * @type {string}
      */
     this.scryfallURL = scryfall_meta.scryfall_uri;
 
 		/**
 		 * Title of this card.
-		 * @type {!string}
+		 * @type {string}
 		 */
 		this.title = title;
 
@@ -44,13 +44,13 @@ export class Card {
 
 		/**
 		 * Url to an image for the art of this card.
-		 * @type {!string}
+		 * @type {string}
 		 */
 		this.imageURL = image_url;
 
 		/**
 		 * String containing the typeline of this card's oracle text
-		 * @type {!string}
+		 * @type {string}
 		 */
 		this.type = mtg_meta.type;
     
@@ -68,14 +68,14 @@ export class Card {
 
 		/**
 		 * Numeric value for the total mana paid for the mana cost of this card 
-		 * @type {!number}
+		 * @type {number}
 		 */
 		this.convertedManaCost = mtg_meta.cmc;
 	}
 
   /**
    * Maps the color identity of a card to the corresponding mana icons as icon elements
-   * return {!Array<string>}
+   * return {Array<string>}
    */
   getManaIcons() {
     const iconTemplate = "<i class='ms ms-cost ms-${icon}'></i>";
@@ -92,8 +92,8 @@ export class Card {
 
   /**
    * Generates a DOM element out of this card object 
-   * @param {!Element} template - a DOM card element to use as a template
-   * @return {!HTMLDivElement}
+   * @param {Element} template - a DOM card element to use as a template
+   * @return {HTMLDivElement}
    */
   render(template) {
     /** @type {HTMLDivElement} */
@@ -162,8 +162,8 @@ export class Card {
 /**
  * Accepts an array of card objects, and inserts them into the DOM
  *
- * @param {!Array<Card>} cardCollection - An array of Card objects, to be rendered into the DOM
- *
+ * @param {Array<Card>} cardCollection - An array of Card objects, to be rendered into the DOM
+ * @returns {void}
  */
 export function showCards(cardCollection) {
   // Get content area for cards, and clear existing elements
