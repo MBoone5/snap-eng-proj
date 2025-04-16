@@ -6,6 +6,20 @@ import { populateCardElements } from "./utils.js";
 // Basic variables to use as some sort of statefulness
 let currentSortOpt = null;
 let currentFilterOpt = null;
+const checkboxGroup = document.getElementById("filter-color-group");
+
+/**
+ *
+ */
+const clearFilters = () => {
+	currentSortOpt = null;
+	currentFilterOpt = null;
+  const checkboxElements = checkboxGroup.querySelectorAll("input:checked"); // NOTE: this is a NodeList, not an Array
+
+  for (const checkbox of checkboxElements) {
+    checkbox.checked = false;
+  }
+};
 
 /**
  *
@@ -22,15 +36,21 @@ export const handleSort = (event) => {
  * @param {Event} event
  */
 export const handleColorFilter = (event) => {
-	const checkboxElements = event.target.parentElement.parentElement.querySelectorAll("input:checked");
+  const checkboxElements = checkboxGroup.querySelectorAll("input:checked"); // NOTE: this is a NodeList, not an Array
 	const selectedColors = Array.from(checkboxElements).map((box) => box.value);
 
-	currentFilterOpt = {
-		field: "color",
-		value: selectedColors,
-	};
+  if (selectedColors.length > 0) {
+    currentFilterOpt = {
+      field: "color",
+      value: selectedColors,
+    };
+  } 
 
-	populateCardElements({ sort: currentSortOpt, filter: currentFilterOpt });
+  if (selectedColors.length === 0) {
+    currentFilterOpt = null;
+  }
+
+  populateCardElements({ sort: currentSortOpt, filter: currentFilterOpt });
 };
 
 /**
@@ -53,11 +73,9 @@ export const handleCMCFilter = (event) => {
  *
  * @param {Event} event
  */
-export const clearFilters = (event) => {
-	currentSortOpt = null;
-	currentFilterOpt = null;
-
-	populateCardElements();
+export const handleClearFilters = (event) => {
+	clearFilters();
+  populateCardElements();
 };
 
 /**
