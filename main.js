@@ -12,7 +12,7 @@ async function attachEventListeners() {
 	document.getElementById("sort-select").addEventListener("change", handleSort);
 
 	document
-		.getElementById("filter-color")
+		.getElementById("filter-color-group")
 		.addEventListener("change", handleFilter);
 
 	document
