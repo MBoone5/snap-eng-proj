@@ -93,7 +93,7 @@ export class Card {
   /**
    * Generates a DOM element out of this card object 
    * @param {!Element} template - a DOM card element to use as a template
-   * @return {!Object}
+   * @return {!HTMLDivElement}
    */
   render(template) {
     /** @type {HTMLDivElement} */
@@ -167,19 +167,28 @@ export class Card {
  */
 export function showCards(cardCollection) {
   // Get content area for cards, and clear existing elements
-	const cardContainer = document.getElementById("card-container");
-	cardContainer.innerHTML = "";
+  /** @type {HTMLDivElement} */
+	const cardContainer = /** @type {HTMLDivElement} */ (document.getElementById("card-container"));
+  if (!cardContainer) {
+    throw new Error("Unable to select 'card-container' div");
+  };
 
   // Get template element
-	const templateCard = document.querySelector(".card");
+  /** @type {HTMLDivElement} */
+	const templateCard = /** @type {HTMLDivElement} */ (document.querySelector(".card"));
+  if (!templateCard) {
+    throw new Error("Unable to select card template");
+  };
+
 	
   // Empty document fragment to be our payload for this data
 	const payload = document.createDocumentFragment();
 
+	cardContainer.innerHTML = "";
   // Render elements for each card object
-  // FIX: Error msg caught in promise --> "TypeError: cardCollection is not iterable"
   for (const cardObject of cardCollection) {
     const renderedCard = cardObject.render(templateCard);
+
     payload.appendChild(renderedCard);
   } 
 
