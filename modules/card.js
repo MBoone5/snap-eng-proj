@@ -82,6 +82,9 @@ export class Card {
 
     // early check for colorless
     if (!this.colors) {
+      throw new Error(`Colors not set on card: ${this.title}`)
+    }
+    if (this.colors &&  this.colors.length === 0) {
       return [iconTemplate.replace("${icon}", "c")];
     }
     
