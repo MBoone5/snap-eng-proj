@@ -165,7 +165,6 @@ export class Card {
 			renderFlavor.style.display = "block";
 		}
 
-		// FIX: Color icons are not properly being set on the element
 		const colorIcons = this.getManaIcons().join("");
 		renderColors.innerHTML = colorIcons;
 		renderScryfallURL.href = this.scryfallURL;
@@ -195,7 +194,7 @@ export class CardCollection {
 	static colors = ["W", "U", "B", "R", "G"];
 	/**
 	 * Constructor function for a new CardCollection
-	 * @param {Array<Card>} primitiveCardList - A standard array of Card objects
+	 * @param {Array<Card>} primitiveCardList - A primitive array (i.e. explicitly NOT a CardColection) of Card objects
 	 */
 	constructor(primitiveCardList) {
 		const cards = primitiveCardList;

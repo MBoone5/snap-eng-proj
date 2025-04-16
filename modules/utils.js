@@ -4,6 +4,12 @@
 import { Card, CardCollection } from "./card.js";
 
 /**
+ * @typdef {Object} OrgSpec
+ * @property {SortOpt} sortOpt
+ * @property {FilterOpt} filterOpt
+ */
+
+/**
  * Function to fetch our static card data
  *
  * @param {string} dataPath - Path to our card data
@@ -62,23 +68,24 @@ function applyFilter(filterOpt, cardCollection) {
 
 /**
  * Function to populate the page with card elements, with any specefied filters/sorts/etc.
- * @param {SortOpt} [sortOpt] - string value to specify sort
- * @param {FilterOpt} [filterOpt] - value to filter by
+ * @param {OrgSpec|null} [orgSpec=null] - Object holding the sort (SortOpt) and filter options (FilterOpt)
  * @return {Promise<void>}
  */
-export async function populateCardElements(sortOpt, filterOpt) {
+export async function populateCardElements(orgSpec) {
 	let cardCollection = await generateCardObjects();
 
-	// If filter is specified, apply it to the collection
-	if (filterOpt) {
-		cardCollection = applyFilter(filterOpt, cardCollection);
-	}
+  if (orgSpec) {
+    // If filter is specified, apply it to the collection
+    if (orgSpec.filterOpt) {
+      cardCollection = applyFilter(orgSpec.filterOpt, cardCollection);
+    }
 
-	// If sort is specified, apply it to the collection
-	if (sortOpt) {
-		cardCollection = applySort(sortOpt, cardCollection);
-	}
+    // If sort is specified, apply it to the collection
+    if (orgSpec.sortOpt) {
+      cardCollection = applySort(orgSpec.sortOpt, cardCollection);
+    }
 
+  }
 	// Get content area for cards, and clear existing elements
 	/** @type {HTMLDivElement} */
 	const cardContainer = /** @type {HTMLDivElement} */ (

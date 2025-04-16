@@ -38,6 +38,13 @@
  * @property {string} option
  */
 
+
+/**
+ * @typedef {Object} OrgSpec
+ * @property {SortOpt} sortOpt
+ * @property {FilterOpt} filterOpt
+ */
+
 // -----------------------------------
 //          END TYPEDEFS
 // -----------------------------------
