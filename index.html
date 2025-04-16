@@ -10,8 +10,30 @@
 
   <body>
     <header class="main-header">
-      <h1 class="title">LA TV Shows</h1>
+      <h1 class="title">MTG SORT</h1>
     </header>
+    <div class="controls">
+      <select id="sort-select">
+        <option value="alphabetical">Sort: Alphabetical</option>
+        <option value="color">Sort: Color</option>
+        <option value="cmc">Sort: CMC</option>
+      </select>
+
+      <select id="filter-color">
+        <option value="">Filter by Color</option>
+        <option value="W">White</option>
+        <option value="U">Blue</option>
+        <option value="B">Black</option>
+        <option value="R">Red</option>
+        <option value="G">Green</option>
+        <option value="C">Colorless</option>
+      </select>
+
+      <input id="filter-type" type="text" placeholder="Filter by type (e.g., Creature)" />
+
+      <input id="filter-cmc" type="number" min="0" placeholder="Filter by CMC" />
+      <button id="clear-filters">Clear Filters</button>
+    </div>
     <div id="card-container"></div>
     <div class="card" style="display: none">
       <div class="card-content">
