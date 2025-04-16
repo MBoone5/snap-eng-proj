@@ -160,10 +160,8 @@ export class Card {
 		renderImage.alt = `Card Art - ${this.title}`;
 		renderType.textContent = this.type;
 
-		if (this.flavorText) {
-			renderFlavor.textContent = this.flavorText;
-			renderFlavor.style.display = "block";
-		}
+    renderFlavor.textContent = this.flavorText;
+    renderFlavor.style.display = "block";
 
 		const colorIcons = this.getManaIcons().join("");
 		renderColors.innerHTML = colorIcons;
