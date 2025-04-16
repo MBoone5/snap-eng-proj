@@ -1,11 +1,14 @@
 // Enable type-checking by the TypeScript compiler via JSDoc comments
 {
   "compilerOptions": {
-    // Allow checking JavaScript files
-    "allowJs": true,
-    // I mean, check JavaScript files for real
+    "allowJs": true, // Allow checking JavaScript files
     "checkJs": true,
-    // Do not generate any output files
-    "noEmit": true
-  }
+    "noEmit": true, // Don't emit/output any files
+    "strict": true
+  },
+  "include": [
+    "main.js", // Main script
+    "types.js", // Typedefs file
+    "modules/**/*.js" // All of our other js
+  ]
 }

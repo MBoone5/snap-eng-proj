@@ -3,38 +3,6 @@
  * @module card
  */
 
-// Custom Typedefs
-/**
- * @typedef {Object} MTGMeta
- * @property {!string} type
- * @property {?Array<string>} colors
- * @property {?string} mana_cost
- * @property {!number} cmc
- */
-
-/**
- * @typedef {Object} ScryfallMeta
- * @property {!string} oracle_id
- * @property {!string} scryfall_uri
- * // ...other properties as needed
- */
-
-/**
- * @typedef {Object} CardJSON
- * @property {!string} title
- * @property {?string} flavor_text
- * @property {!string} image_url
- * @property {!MTGMeta} mtg_meta
- * @property {!ScryfallMeta} scryfall_meta
- */
-
-/** 
- * @typedef {Array<Card>} CardCollection
- */
-
-/**
- * @type
-
 /**
  * Represents a card element within the catalogue
  * @class
@@ -43,7 +11,7 @@ export class Card {
 	/**
 	 * Constructor method for Card objects
 	 * @constructor
-	 * @param {!CardJSON} cardJSON - JSON Object containing the card data TODO: Create typedef with the json object structure
+	 * @param {!CardJSON} cardJSON - JSON Object containing the card data
 	 */
 	constructor(cardJSON) {
 		const { title, flavor_text, image_url, mtg_meta, scryfall_meta } = cardJSON;
@@ -101,12 +69,6 @@ export class Card {
 		 * @type {!number}
 		 */
 		this.convertedManaCost = mtg_meta.cmc;
-
-		/**
-		 * Metadata regarding the entry for this card in the Scryfall database.
-		 * @type {?Array<Object>}
-		 */
-		this.scryfallMeta = scryfall_meta;
 	}
 
   /**
@@ -167,10 +129,10 @@ export class Card {
 /**
  * Accepts an array of card objects, and inserts them into the DOM
  *
- * @param {!Array<Card>} cardData - An array of Card objects to render into the DOM
+ * @param {!CardCollection} cardCollection - An array of Card objects, to be rendered into the DOM
  *
  */
-export function showCards(cardData) {
+export function showCards(cardCollection) {
   // Get content area for cards, and clear existing elements
 	const cardContainer = document.getElementById("card-container");
 	cardContainer.innerHTML = "";
@@ -182,7 +144,8 @@ export function showCards(cardData) {
 	const payload = document.createDocumentFragment();
 
   // Render elements for each card object
-  for (const cardObject of cardData) {
+  // FIX: Error msg caught in promise --> "TypeError: cardCollection is not iterable"
+  for (const cardObject of cardCollection) {
     const renderedCard = cardObject.render(templateCard);
     payload.appendChild(renderedCard);
   } 
