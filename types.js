@@ -29,17 +29,14 @@
 
 /**
  * @typedef {Object} FilterOpt
- * @property {string} type
- * @property {string} colors
- * @property {number} cmc
+ * @property {string|null} [type=null]
+ * @property {string|null} [colors=null]
+ * @property {number|null} [cmc=null]
  */
 
 /**
  * @typedef {Object} SortOpt
- * @property {string} alphabetical
- * @property {string} colors
- * @property {number} cmc
- * @proprety {boolean} reverse
+ * @property {string} option
  */
 
 // -----------------------------------

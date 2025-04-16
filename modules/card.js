@@ -260,6 +260,32 @@ export class CardCollection {
 		return new CardCollection(cardsSorted);
 	}
 
+  /**
+   * Sorts the collection by the specified sort option 
+   * @param {SortOpt} sortOpt - String identifier for a sort option
+   * @return {CardCollection}
+   */ 
+  sortBy(sortOpt) {
+    // Early check to prevent null options
+    if (!sortOpt) {
+      throw new Error("Attempting to sort without specifying a sort option")
+    }
+    
+    let sortedCollection;
+
+    if (sortOpt.option === "color") {
+      return this.sortCollectionByColor();  
+    } 
+
+    if (sortOpt.option === "cmc") {
+      return this.sortCollectionByCMC();  
+    } 
+
+    if (sortOpt.option === "alphabetical") {
+      return this.sortCollectionAlphabetically();  
+    } 
+  } 
+
 	/**
 	 * sorts the collection by converted mana cost
 	 * @return {CardCollection}

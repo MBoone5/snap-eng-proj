@@ -8,7 +8,8 @@ import { populateCardElements } from "./utils.js"
  * @param {Event} event
  */
 export const handleSort = (event) => {
-  console.log(`Event handled - handleSort: ${event.target.value}`);
+  const sortSpec = { "option": event.target.value };
+  populateCardElements(sortSpec);
 }
 
 /**
@@ -16,6 +17,7 @@ export const handleSort = (event) => {
  * @param {Event} event
  */
 export const handleFilter = (event) => {
+  const filterSpec = {}
   console.log(`Event handled - handleSort: ${event.target.value}`);
 }
 
