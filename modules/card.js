@@ -4,41 +4,6 @@
  * NOTE: Custom typedefs must be triple-slash referenced in main when using this module
  */
 
-// -----------------------------------
-//            TYPEDEFS
-// -----------------------------------
-
-/**
- * @typedef {Object} MTGMeta
- * @property {!string} type
- * @property {?Array<string>} colors
- * @property {?string} mana_cost
- * @property {!number} cmc
- */
-
-/**
- * @typedef {Object} ScryfallMeta
- * @property {!string} oracle_id
- * @property {!string} scryfall_uri
- */
-
-/**
- * @typedef {Object} CardJSON
- * @property {!string} title
- * @property {?string} flavor_text
- * @property {!string} image_url
- * @property {!MTGMeta} mtg_meta
- * @property {!ScryfallMeta} scryfall_meta
- */
-
-/** 
- * @typedef {Array<Card>} CardCollection
- */
-
-// -----------------------------------
-//          END TYPEDEFS
-// -----------------------------------
-
 /**
  * Represents a card element within the catalogue
  * @class
@@ -162,10 +127,11 @@ export class Card {
   }
 }
 
+
 /**
  * Accepts an array of card objects, and inserts them into the DOM
  *
- * @param {!CardCollection} cardCollection - An array of Card objects, to be rendered into the DOM
+ * @param {!Array<Card>} cardCollection - An array of Card objects, to be rendered into the DOM
  *
  */
 export function showCards(cardCollection) {
@@ -194,3 +160,4 @@ export function showCards(cardCollection) {
 // 	titles.pop(); // Remove last item in titles array
 // 	showCards(); // Call showCards again to refresh
 // }
+

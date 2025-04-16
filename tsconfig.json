@@ -8,6 +8,7 @@
   },
   "include": [
     "main.js", // Main script
+    "types.js", // Script with our custom typedefs
     "modules/**/*.js" // All of our other js
   ]
 }
