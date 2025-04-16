@@ -248,24 +248,53 @@ export class CardCollection {
 			.slice(indexOfNewColor)
 			.concat(existingPriority.slice(0, indexOfNewColor)); // Shifts everything over, preserving basic order
 
-    this.colorPriority = newPriority;
+		this.colorPriority = newPriority;
+	}
+
+	/**
+	 * sorts the collection by the specified color, and returns a new collection
+	 * @param {string} sortBy - color to sort by
+	 * @return {CardCollection}
+	 */
+	// FIX: THIS ONLY WORKS BASED ON THE FIRST COLOR OF THE OBJECT
+	// FIX: Need to handle null colors/colorless
+	sortCollectionByColor(sortBy) {
+		const cardsCopy = this.cards.splice();
+
+		const cardsSorted = cardsCopy.sort((a, b) => {
+			const colorAIndex = this.colorPriority.indexOf(a.colors[0]);
+			const colorBIndex = this.colorPriority.indexOf(b.colors[0]);
+
+			return colorAIndex - colorBIndex;
+		});
+
+		return new CardCollection(cardsSorted);
 	}
 
   /**
-   * sorts the collection by the specified color
-   * @param {string} sortBy - color to sort by
+   * sorts the collection by alphabetically
+   * @return {CardCollection}
    */
-  // FIX: THIS ONLY WORKS BASED ON THE FIRST COLOR OF THE OBJECT
-  sortCollectionByColor(sortBy) {
-    const cardsCopy = this.cards.splice();
+	sortCollectionAlphabetically() {
+		const cardsCopy = this.cards.splice();
 
-    cardsCopy.sort((a, b) => {
-      const colorAIndex = this.colorPriority.indexOf(a.colors[0]);
-      const colorBIndex = this.colorPriority.indexOf(b.colors[0]);
+		const cardsSorted = cardsCopy.sort((a, b) => {
+			// If card a's title is alphabetically before card b's title
+			if (a.title < b.title) {
+				return -1;
+			}
 
-      return colorAIndex - colorBIndex;
-    })
-  }
+			// If card a's title is alphabetically after card b's title
+			if (a.title > b.title) {
+				return 1;
+			}
+
+      // In any other case, keep the items in place
+      return 0;
+		});
+
+		return new CardCollection(cardsSorted);
+	}
 }
 
 /**
