@@ -1,6 +1,7 @@
 /**
  * @fileOverview this module handles alerts for interactive elements
  * @module alerts
+ * NOTE: Custom typedefs must be triple-slash referenced in main when using this module
  **/
 
 // TODO: add JSdoc for this guy

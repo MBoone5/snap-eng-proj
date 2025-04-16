@@ -1,7 +1,43 @@
 /**
  * @fileOverview Module for Card objects and applicable methods that act on them
- * @module card
+ * @module card 
+ * NOTE: Custom typedefs must be triple-slash referenced in main when using this module
  */
+
+// -----------------------------------
+//            TYPEDEFS
+// -----------------------------------
+
+/**
+ * @typedef {Object} MTGMeta
+ * @property {!string} type
+ * @property {?Array<string>} colors
+ * @property {?string} mana_cost
+ * @property {!number} cmc
+ */
+
+/**
+ * @typedef {Object} ScryfallMeta
+ * @property {!string} oracle_id
+ * @property {!string} scryfall_uri
+ */
+
+/**
+ * @typedef {Object} CardJSON
+ * @property {!string} title
+ * @property {?string} flavor_text
+ * @property {!string} image_url
+ * @property {!MTGMeta} mtg_meta
+ * @property {!ScryfallMeta} scryfall_meta
+ */
+
+/** 
+ * @typedef {Array<Card>} CardCollection
+ */
+
+// -----------------------------------
+//          END TYPEDEFS
+// -----------------------------------
 
 /**
  * Represents a card element within the catalogue
