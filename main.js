@@ -1,24 +1,8 @@
 /// <reference path="./types.js" />
 /// <reference path="./modules/card.js" />
 
-import { quoteAlert } from "./modules/alerts.js";
 import { Card, CardCollection, showCards } from "./modules/card.js";
-
-/**
- * Function to fetch our static card data
- *
- * @param {!string} dataPath - Path to our card data
- * @return {Promise<Object<string, Array<CardJSON>>>}
- */
-async function fetchCardsJSON(dataPath) {
-	return fetch(dataPath).then((response) => {
-		if (response.ok === false) {
-			throw new Error(`Unable to fetch card data. Status: ${response.status}`);
-		}
-
-		return response.json();
-	});
-}
+import { fetchCardsJSON } from "./modules/utils.js";
 
 /**
  * Function to map raw json data of cards into Card objects
@@ -34,6 +18,10 @@ async function generateCardObjects() {
 	return new CardCollection(cardObjects);
 }
 
+/**
+ * Function to populate the page with card elements
+ * @return {void}
+ */
 async function populateCardElements() {
 	// Dynamically insert card content
 	const cardCollection = await generateCardObjects();
