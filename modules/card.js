@@ -2,7 +2,7 @@
 
 /**
  * @fileOverview Module for Card objects and applicable methods that act on them
- * @module card 
+ * @module card
  */
 
 /**
@@ -18,17 +18,17 @@ export class Card {
 	constructor(cardJSON) {
 		const { title, flavor_text, image_url, mtg_meta, scryfall_meta } = cardJSON;
 
-    /**
-     * ID of this card and the specific printing, within the scryfall DB
-     * @type {string}
-     */
-    this.id = scryfall_meta.oracle_id;
+		/**
+		 * ID of this card and the specific printing, within the scryfall DB
+		 * @type {string}
+		 */
+		this.id = scryfall_meta.oracle_id;
 
-    /**
-     * URL for the scryfall page for this card
-     * @type {string}
-     */
-    this.scryfallURL = scryfall_meta.scryfall_uri;
+		/**
+		 * URL for the scryfall page for this card
+		 * @type {string}
+		 */
+		this.scryfallURL = scryfall_meta.scryfall_uri;
 
 		/**
 		 * Title of this card.
@@ -53,13 +53,13 @@ export class Card {
 		 * @type {string}
 		 */
 		this.type = mtg_meta.type;
-    
+
 		/**
 		 * Array of strings that denote the color identity of this card (e.g. "U" for blue, "W" for white, etc.)
 		 * @type {?Array<string>}
 		 */
 		this.colors = mtg_meta.colors;
-    
+
 		/**
 		 * String containing the mana cost of this card (e.g. "{3}{W}{B}, {2}, etc.")
 		 * @type {?string}
@@ -67,101 +67,145 @@ export class Card {
 		this.manaCost = mtg_meta.mana_cost;
 
 		/**
-		 * Numeric value for the total mana paid for the mana cost of this card 
+		 * Numeric value for the total mana paid for the mana cost of this card
 		 * @type {number}
 		 */
 		this.convertedManaCost = mtg_meta.cmc;
 	}
 
-  /**
-   * Maps the color identity of a card to the corresponding mana icons as icon elements
-   * return {Array<string>}
-   */
-  getManaIcons() {
-    const iconTemplate = "<i class='ms ms-cost ms-${icon}'></i>";
+	/**
+	 * Maps the color identity of a card to the corresponding mana icons as icon elements
+	 * return {Array<string>}
+	 */
+	getManaIcons() {
+		const iconTemplate = "<i class='ms ms-cost ms-${icon}'></i>";
 
-    // early check for colorless
-    if (!this.colors) {
-      throw new Error(`Colors not set on card: ${this.title}`)
-    }
-    if (this.colors &&  this.colors.length === 0) {
-      return [iconTemplate.replace("${icon}", "c")];
-    }
-    
-    const iconsList = this.colors.map((color) => iconTemplate.replace("${icon}", color.toLowerCase()));
+		// early check for colorless
+		if (!this.colors) {
+			throw new Error(`Colors not set on card: ${this.title}`);
+		}
+		if (this.colors && this.colors.length === 0) {
+			return [iconTemplate.replace("${icon}", "c")];
+		}
 
-    return iconsList
-  }
+		const iconsList = this.colors.map((color) =>
+			iconTemplate.replace("${icon}", color.toLowerCase()),
+		);
 
-  /**
-   * Generates a DOM element out of this card object 
-   * @param {Element} template - a DOM card element to use as a template
-   * @return {HTMLDivElement}
-   */
-  render(template) {
-    /** @type {HTMLDivElement} */
-    const render = /** @type {HTMLDivElement} */ (template.cloneNode(true));
+		return iconsList;
+	}
 
-    /** @type {HTMLHeadingElement} */
-    const renderTitle = /** @type {HTMLHeadingElement} */ (render.querySelector("h2"));
-    if (!renderTitle) {
-      throw new Error("Template element missing 'title' element");
-    };
+	/**
+	 * Generates a DOM element out of this card object
+	 * @param {Element} template - a DOM card element to use as a template
+	 * @return {HTMLDivElement}
+	 */
+	render(template) {
+		/** @type {HTMLDivElement} */
+		const render = /** @type {HTMLDivElement} */ (template.cloneNode(true));
 
-    /** @type {HTMLImageElement} */
-    const renderImage = /** @type {HTMLImageElement} */ (render.querySelector("img"));
-    if (!renderImage) {
-      throw new Error("Template element missing 'image' element");
-    };
+		/** @type {HTMLHeadingElement} */
+		const renderTitle = /** @type {HTMLHeadingElement} */ (
+			render.querySelector("h2")
+		);
+		if (!renderTitle) {
+			throw new Error("Template element missing 'title' element");
+		}
 
-    /** @type {HTMLLIElement} */
-    const renderType = /** @type {HTMLLIElement} */ (render.querySelector("#type"));
-    if (!renderType) {
-      throw new Error("Template element missing '#type' element");
-    };
+		/** @type {HTMLImageElement} */
+		const renderImage = /** @type {HTMLImageElement} */ (
+			render.querySelector("img")
+		);
+		if (!renderImage) {
+			throw new Error("Template element missing 'image' element");
+		}
 
-    /** @type {HTMLHeadingElement} */
-    const renderFlavor = /** @type {HTMLHeadingElement} */ (render.querySelector("#flavor"));
-    if (!renderFlavor) {
-      throw new Error("Template element missing '#flavor' element");
-    };
+		/** @type {HTMLLIElement} */
+		const renderType = /** @type {HTMLLIElement} */ (
+			render.querySelector("#type")
+		);
+		if (!renderType) {
+			throw new Error("Template element missing '#type' element");
+		}
 
-    /** @type {HTMLLIElement} */
-    const renderColors = /** @type {HTMLLIElement} */ (render.querySelector("#color-info"));
-    if (!renderColors) {
-      throw new Error("Template element missing '#color-info' element");
-    };
+		/** @type {HTMLHeadingElement} */
+		const renderFlavor = /** @type {HTMLHeadingElement} */ (
+			render.querySelector("#flavor")
+		);
+		if (!renderFlavor) {
+			throw new Error("Template element missing '#flavor' element");
+		}
 
-    /** @type {HTMLAnchorElement} */
-    const renderScryfallURL = /** @type {HTMLAnchorElement} */ (render.querySelector("#scryfall-link"));
-    if (!renderScryfallURL) {
-      throw new Error("Template element missing 'scryfall-url' element");
-    };
+		/** @type {HTMLLIElement} */
+		const renderColors = /** @type {HTMLLIElement} */ (
+			render.querySelector("#color-info")
+		);
+		if (!renderColors) {
+			throw new Error("Template element missing '#color-info' element");
+		}
 
-    render.style.display = "block" // Force block display to unhide template element
+		/** @type {HTMLAnchorElement} */
+		const renderScryfallURL = /** @type {HTMLAnchorElement} */ (
+			render.querySelector("#scryfall-link")
+		);
+		if (!renderScryfallURL) {
+			throw new Error("Template element missing 'scryfall-url' element");
+		}
 
-    // Populate new element with card data
-    renderTitle.textContent = this.title;
-    renderImage.src = this.imageURL;
-    renderImage.alt = `Card Art - ${this.title}`;
-    renderType.textContent = this.type;
+		render.style.display = "block"; // Force block display to unhide template element
 
-    if (this.flavorText) {
-      renderFlavor.textContent = this.flavorText;
-      renderFlavor.style.display = "block";
-    }
+		// Populate new element with card data
+		renderTitle.textContent = this.title;
+		renderImage.src = this.imageURL;
+		renderImage.alt = `Card Art - ${this.title}`;
+		renderType.textContent = this.type;
 
-    // FIX: Color icons are not properly being set on the element
-    const colorIcons = this.getManaIcons().join("");
-    renderColors.innerHTML = colorIcons;
-    renderScryfallURL.href = this.scryfallURL;
+		if (this.flavorText) {
+			renderFlavor.textContent = this.flavorText;
+			renderFlavor.style.display = "block";
+		}
 
-	  // console.log("new card:", renderTitle, "- html: ", render);
+		// FIX: Color icons are not properly being set on the element
+		const colorIcons = this.getManaIcons().join("");
+		renderColors.innerHTML = colorIcons;
+		renderScryfallURL.href = this.scryfallURL;
 
-    return render 
-  }
+		// console.log("new card:", renderTitle, "- html: ", render);
+
+		return render;
+	}
 }
 
+/**
+ * Represent a collection of card objects, enabling sort/filter/etc. prior to rendering
+ * @class
+ */
+export class CardCollection {
+  /**
+   * Enum field for the search/sort fields to catagorize cards
+   * @readonly
+   * @enum {string}
+   */
+	static FIELDS = {
+    COLOR: "color",
+		CMC: "cmc", // Card.convertedManaCost
+		TYPE: "type", 
+  }
+
+	/**
+	 * Constructor function for a new CardCollection
+	 * @param {Array<Card>} primitiveCardList - A standard array of Card objects
+	 */
+	constructor(primitiveCardList) {
+		const cards = primitiveCardList;
+
+		/**
+		 * The actual list of cards that this collection encapsulates
+		 * @type {Array<Card>}
+		 */
+		this.cards = cards;
+	}
+}
 
 /**
  * Accepts an array of card objects, and inserts them into the DOM
@@ -170,31 +214,34 @@ export class Card {
  * @returns {void}
  */
 export function showCards(cardCollection) {
-  // Get content area for cards, and clear existing elements
-  /** @type {HTMLDivElement} */
-	const cardContainer = /** @type {HTMLDivElement} */ (document.getElementById("card-container"));
-  if (!cardContainer) {
-    throw new Error("Unable to select 'card-container' div");
-  };
+	// Get content area for cards, and clear existing elements
+	/** @type {HTMLDivElement} */
+	const cardContainer = /** @type {HTMLDivElement} */ (
+		document.getElementById("card-container")
+	);
+	if (!cardContainer) {
+		throw new Error("Unable to select 'card-container' div");
+	}
 
-  // Get template element
-  /** @type {HTMLDivElement} */
-	const templateCard = /** @type {HTMLDivElement} */ (document.querySelector(".card"));
-  if (!templateCard) {
-    throw new Error("Unable to select card template");
-  };
+	// Get template element
+	/** @type {HTMLDivElement} */
+	const templateCard = /** @type {HTMLDivElement} */ (
+		document.querySelector(".card")
+	);
+	if (!templateCard) {
+		throw new Error("Unable to select card template");
+	}
 
-	
-  // Empty document fragment to be our payload for this data
+	// Empty document fragment to be our payload for this data
 	const payload = document.createDocumentFragment();
 
 	cardContainer.innerHTML = "";
-  // Render elements for each card object
-  for (const cardObject of cardCollection) {
-    const renderedCard = cardObject.render(templateCard);
+	// Render elements for each card object
+	for (const cardObject of cardCollection) {
+		const renderedCard = cardObject.render(templateCard);
 
-    payload.appendChild(renderedCard);
-  } 
+		payload.appendChild(renderedCard);
+	}
 
 	cardContainer.appendChild(payload);
 }
@@ -204,4 +251,3 @@ export function showCards(cardCollection) {
 // 	titles.pop(); // Remove last item in titles array
 // 	showCards(); // Call showCards again to refresh
 // }
-
