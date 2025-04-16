@@ -3,15 +3,18 @@
 
 import { populateCardElements } from "./utils.js";
 
+// Basic variables to use as some sort of statefulness
+let currentSortOpt = null;
+let currentFilterOpt = null;
+
 /**
  *
  * @param {Event} event
  */
 export const handleSort = (event) => {
-	const sortOpt = { option: event.target.value };
-	const orgSpec = { sortOpt: sortOpt };
+	currentSortOpt = { option: event.target.value };
 
-	populateCardElements(orgSpec);
+	populateCardElements({sort: currentSortOpt, filter: currentFilterOpt});
 };
 
 /**
@@ -19,14 +22,13 @@ export const handleSort = (event) => {
  * @param {Event} event
  */
 export const handleFilter = (event) => {
-	const filterOpt = {
+	currentFilterOpt = {
 		field: "color",
 		value: event.target.value,
 	};
 
-	const orgSpec = { filterOpt: filterOpt };
 
-	populateCardElements(orgSpec);
+	populateCardElements({sort: currentSortOpt, filter: currentFilterOpt});
 };
 
 /**
@@ -34,8 +36,9 @@ export const handleFilter = (event) => {
  * @param {Event} event
  */
 export const clearFilters = (event) => {
-	document.querySelector("#sort-select").value = "alphabetical";
-	document.querySelector("#filter-color").value = "";
+  currentSortOpt = null;
+  currentFilterOpt = null;
+
 	populateCardElements();
 };
 
