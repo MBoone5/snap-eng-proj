@@ -48,8 +48,13 @@ function main() {
 	console.log("Entered main, commencing misson...");
 	populateCardElements();
 
-	// TODO: Add listeners module, or some other means of seperating concerns and bulk init of listeners
-	quoteAlert();
+  // Add janky listeners
+  // FIX: couldn't finish in time :(
+  // document.getElementById('sort-select').addEventListener('change')
+  // document.getElementById('filter-color').addEventListener('change')
+  // document.getElementById('filter-type').addEventListener('input')
+  // document.getElementById('filter-cmc').addEventListener('input')
+  // document.getElementById('clear-filters').addEventListener('click')
 }
 
 // This calls main() function when the doc has loaded
