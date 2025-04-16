@@ -272,6 +272,20 @@ export class CardCollection {
 	}
 
   /**
+   * sorts the collection by converted mana cost
+   * @return {CardCollection}
+   */
+  sortCollectionByCMC() {
+    const cardsCopy = this.cards.slice();
+
+    const cardsSorted = cardsCopy.sort((a, b) => {
+      return a.convertedManaCost - b.convertedManaCost;
+    });
+
+    return new CardsCollection(cardsSorted);
+  }
+
+  /**
    * sorts the collection by alphabetically
    * @return {CardCollection}
    */
