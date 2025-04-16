@@ -19,13 +19,33 @@ async function generateCardObjects() {
 }
 
 /**
- * Function to populate the page with card elements
+ * Function to populate the page with card elements, with any specefied filters/sorts/etc.
+ * @param {Object<string>|null} orgSpec - Object that specifies how to organize the data, if at all
  * @return {void}
  */
-async function populateCardElements() {
+async function populateCardElements(orgSpec) {
 	// Dynamically insert card content
+  if (orgSpec) {
+    return;
+  }
+
 	const cardCollection = await generateCardObjects();
 	showCards(cardCollection);
+}
+
+/**
+ * Function to attach the appropriate event listeners/handlers to the page controls
+ * @return {void}
+ */
+async function attachEventListeners() {
+  // Add janky listeners
+  // FIX: couldn't finish in time :(
+  // document.getElementById('sort-select').addEventListener('change')
+  // document.getElementById('filter-color').addEventListener('change')
+  // document.getElementById('filter-type').addEventListener('input')
+  // document.getElementById('filter-cmc').addEventListener('input')
+  // document.getElementById('clear-filters').addEventListener('click')
+  return;
 }
 
 /**
@@ -35,14 +55,8 @@ async function populateCardElements() {
 function main() {
 	console.log("Entered main, commencing misson...");
 	populateCardElements();
+  attachEventListeners();
 
-  // Add janky listeners
-  // FIX: couldn't finish in time :(
-  // document.getElementById('sort-select').addEventListener('change')
-  // document.getElementById('filter-color').addEventListener('change')
-  // document.getElementById('filter-type').addEventListener('input')
-  // document.getElementById('filter-cmc').addEventListener('input')
-  // document.getElementById('clear-filters').addEventListener('click')
 }
 
 // This calls main() function when the doc has loaded
