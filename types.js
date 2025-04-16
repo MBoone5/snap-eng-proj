@@ -41,8 +41,8 @@
 
 /**
  * @typedef {Object} OrgSpec
- * @property {SortOpt} sortOpt
- * @property {FilterOpt} filterOpt
+ * @property {SortOpt|null} sort
+ * @property {FilterOpt|null} filter
  */
 
 // -----------------------------------

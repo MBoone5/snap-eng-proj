@@ -240,13 +240,39 @@ export class CardCollection {
 	}
 
 	/**
-	 * sorts the collection by the specified color, and returns a new collection
-	 * @param {string} sortBy - color to sort by
+	 * Sorts the collection by the specified sort option
+	 * @param {SortOpt} sortOpt - String identifier for a sort option
 	 * @return {CardCollection}
+	 */
+	sortBy(sortOpt) {
+		// Early check to prevent null options
+		if (!sortOpt) {
+			throw new Error("Attempting to sort without specifying a sort option");
+		}
+
+		if (sortOpt.option === "color") {
+			this.sortCollectionByColor();
+      return this;
+		}
+
+		if (sortOpt.option === "cmc") {
+			this.sortCollectionByCMC();
+      return this;
+		}
+
+		if (sortOpt.option === "alphabetical") {
+			this.sortCollectionAlphabetically();
+      return this;
+		}
+	}
+
+	/**
+	 * sorts the collection by the specified color, and returns a new collection
+	 * @return {void}
 	 */
 	// FIX: THIS ONLY WORKS BASED ON THE FIRST COLOR OF THE OBJECT
 	// FIX: Need to handle null colors/colorless
-	sortCollectionByColor(sortBy) {
+	sortCollectionByColor() {
 		const cardsCopy = this.cards.slice();
 
 		const cardsSorted = cardsCopy.sort((a, b) => {
@@ -256,38 +282,11 @@ export class CardCollection {
 			return colorAIndex - colorBIndex;
 		});
 
-		return new CardCollection(cardsSorted);
+		this.cards = cardsSorted;
 	}
-
-  /**
-   * Sorts the collection by the specified sort option 
-   * @param {SortOpt} sortOpt - String identifier for a sort option
-   * @return {CardCollection}
-   */ 
-  sortBy(sortOpt) {
-    // Early check to prevent null options
-    if (!sortOpt) {
-      throw new Error("Attempting to sort without specifying a sort option")
-    }
-    
-    let sortedCollection;
-
-    if (sortOpt.option === "color") {
-      return this.sortCollectionByColor();  
-    } 
-
-    if (sortOpt.option === "cmc") {
-      return this.sortCollectionByCMC();  
-    } 
-
-    if (sortOpt.option === "alphabetical") {
-      return this.sortCollectionAlphabetically();  
-    } 
-  } 
-
 	/**
 	 * sorts the collection by converted mana cost
-	 * @return {CardCollection}
+	 * @return {void}
 	 */
 	sortCollectionByCMC() {
 		const cardsCopy = this.cards.slice();
@@ -296,12 +295,12 @@ export class CardCollection {
 			return a.convertedManaCost - b.convertedManaCost;
 		});
 
-		return new CardCollection(cardsSorted);
+		this.cards = cardsSorted;
 	}
 
 	/**
 	 * sorts the collection by alphabetically
-	 * @return {CardCollection}
+	 * @return {void}
 	 */
 	sortCollectionAlphabetically() {
 		const cardsCopy = this.cards.slice();
@@ -321,7 +320,7 @@ export class CardCollection {
 			return 0;
 		});
 
-		return new CardCollection(cardsSorted);
+		this.cards = cardsSorted;
 	}
 
 	/**

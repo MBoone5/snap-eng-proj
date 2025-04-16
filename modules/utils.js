@@ -72,20 +72,21 @@ function applyFilter(filterOpt, cardCollection) {
  * @return {Promise<void>}
  */
 export async function populateCardElements(orgSpec) {
+  console.log(orgSpec)
 	let cardCollection = await generateCardObjects();
 
-  if (orgSpec) {
-    // If filter is specified, apply it to the collection
-    if (orgSpec.filterOpt) {
-      cardCollection = applyFilter(orgSpec.filterOpt, cardCollection);
-    }
+	if (orgSpec) {
+		// If filter is specified, apply it to the collection
+		if (orgSpec.filter) {
+			cardCollection = applyFilter(orgSpec.filter, cardCollection);
+		}
 
-    // If sort is specified, apply it to the collection
-    if (orgSpec.sortOpt) {
-      cardCollection = applySort(orgSpec.sortOpt, cardCollection);
-    }
+		// If sort is specified, apply it to the collection
+		if (orgSpec.sort) {
+			applySort(orgSpec.sort, cardCollection);
+		}
+	}
 
-  }
 	// Get content area for cards, and clear existing elements
 	/** @type {HTMLDivElement} */
 	const cardContainer = /** @type {HTMLDivElement} */ (
@@ -108,6 +109,7 @@ export async function populateCardElements(orgSpec) {
 	const payload = document.createDocumentFragment();
 
 	cardContainer.innerHTML = "";
+
 	// Render elements for each card object
 	for (const cardObject of cardCollection.cards) {
 		const renderedCard = cardObject.render(templateCard);
