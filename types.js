@@ -26,6 +26,22 @@
  * @property {!ScryfallMeta} scryfall_meta
  */
 
+
+/**
+ * @typedef {Object} FilterOpt
+ * @property {string} type
+ * @property {string} colors
+ * @property {number} cmc
+ */
+
+/**
+ * @typedef {Object} SortOpt
+ * @property {string} alphabetical
+ * @property {string} colors
+ * @property {number} cmc
+ * @proprety {boolean} reverse
+ */
+
 // -----------------------------------
 //          END TYPEDEFS
 // -----------------------------------

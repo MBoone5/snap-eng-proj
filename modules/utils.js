@@ -3,6 +3,7 @@
 
 import { Card, CardCollection } from "./card.js";
 
+
 /**
  * Function to fetch our static card data
  *
@@ -21,7 +22,6 @@ async function fetchCardsJSON(dataPath) {
 
 /**
  * Function to map raw json data of cards into Card objects
- *
  * @returns {Promise<CardCollection>}
  */
 async function generateCardObjects() {
@@ -35,15 +35,12 @@ async function generateCardObjects() {
 
 /**
  * Function to populate the page with card elements, with any specefied filters/sorts/etc.
- * @param {Object<string>|null} orgSpec - Object that specifies how to organize the data, if at all
- * @return {void}
+ * @param {SortOpt|null} sortOpt - string value to specify sort
+ * @param {FilterOpt|null} filterOpt - value to filter by
+ * @return {Promise<void>}
  */
-export async function populateCardElements(orgSpec) {
-	// Dynamically insert card content
-	if (orgSpec) {
-		return;
-	}
-
+// TODO: Handle params to apply filters
+export async function populateCardElements(sortOpt, filterOpt) {
 	const cardCollection = await generateCardObjects();
 
 	// Get content area for cards, and clear existing elements
