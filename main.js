@@ -6,7 +6,7 @@ import { handleSort, handleFilter, clearFilters } from "./modules/handlers.js";
 
 /**
  * Function to attach the appropriate event listeners/handlers to the page controls
- * @return {void}
+ * @return {Promise<void>}
  */
 async function attachEventListeners() {
 	document.getElementById("sort-select").addEventListener("change", handleSort);

@@ -38,7 +38,7 @@ export class Card {
 
 		/**
 		 * Flavor text on this card, if any, given this specific printing.
-		 * @type  {?string}
+		 * @type  {string|null}
 		 */
 		this.flavorText = flavor_text;
 
@@ -56,13 +56,13 @@ export class Card {
 
 		/**
 		 * Array of strings that denote the color identity of this card (e.g. "U" for blue, "W" for white, etc.)
-		 * @type {?Array<string>}
+		 * @type {string[]}
 		 */
 		this.colors = mtg_meta.colors;
 
 		/**
 		 * String containing the mana cost of this card (e.g. "{3}{W}{B}, {2}, etc.")
-		 * @type {?string}
+		 * @type {string}
 		 */
 		this.manaCost = mtg_meta.mana_cost;
 

@@ -1,6 +1,8 @@
 /// <reference path="../types.js" />
 /// <reference path="./card.js" />
 
+import { populateCardElements } from "./utils.js"
+
 /**
  *
  * @param {Event} event

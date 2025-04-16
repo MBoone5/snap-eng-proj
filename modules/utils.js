@@ -3,11 +3,10 @@
 
 import { Card, CardCollection } from "./card.js";
 
-
 /**
  * Function to fetch our static card data
  *
- * @param {!string} dataPath - Path to our card data
+ * @param {string} dataPath - Path to our card data
  * @return {Promise<Object<string, Array<CardJSON>>>}
  */
 async function fetchCardsJSON(dataPath) {
@@ -35,8 +34,8 @@ async function generateCardObjects() {
 
 /**
  * Function to populate the page with card elements, with any specefied filters/sorts/etc.
- * @param {SortOpt|null} sortOpt - string value to specify sort
- * @param {FilterOpt|null} filterOpt - value to filter by
+ * @param {SortOpt} [sortOpt] - string value to specify sort
+ * @param {FilterOpt} [filterOpt] - value to filter by
  * @return {Promise<void>}
  */
 // TODO: Handle params to apply filters
@@ -74,4 +73,3 @@ export async function populateCardElements(sortOpt, filterOpt) {
 
 	cardContainer.appendChild(payload);
 }
-
