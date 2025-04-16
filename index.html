@@ -21,15 +21,15 @@
       <option value="cmc">Sort: CMC</option>
     </select>
 
-    <select id="filter-color" aria-label="Filter by Color">
-      <option value="">Filter by Color</option>
-      <option value="W">⚪ White</option>
-      <option value="U">🔵 Blue</option>
-      <option value="B">⚫ Black</option>
-      <option value="R">🔴 Red</option>
-      <option value="G">🟢 Green</option>
-      <option value="C">⬜ Colorless</option>
-    </select>
+    <fieldset id="filter-color-group" class="color-checkbox-group">
+      <legend>Filter by Color</legend>
+      <label><input type="checkbox" name="filter-color" value="W"> ⚪ White</label>
+      <label><input type="checkbox" name="filter-color" value="U"> 🔵 Blue</label>
+      <label><input type="checkbox" name="filter-color" value="B"> ⚫ Black</label>
+      <label><input type="checkbox" name="filter-color" value="R"> 🔴 Red</label>
+      <label><input type="checkbox" name="filter-color" value="G"> 🟢 Green</label>
+      <label><input type="checkbox" name="filter-color" value="C"> ⬜ Colorless</label>
+    </fieldset>
 
     <input id="filter-type" type="text" placeholder="Type (e.g., Creature)" aria-label="Filter by Type" />
 
