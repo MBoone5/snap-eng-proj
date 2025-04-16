@@ -2,91 +2,195 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+  min-height: 100vh;
+  font-family: "Segoe UI", "Verdana", sans-serif;
+  color: #f2f2f2;
 }
 
+/* Header */
 .main-header {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding-bottom: 10px;
+  background: rgba(30, 40, 60, 0.95);
+  padding: 2rem 0 1rem 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .title {
-  text-align: center;
+  font-size: 4rem;
   margin: 0;
-  font-size: 8em;
-  font-family: "Helvetica";
-  font-weight: normal;
-  color: white;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #fff;
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
 }
 
-#card-container {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-content: stretch;
+.subtitle {
+  font-size: 1.3rem;
+  color: #bdbdbd;
+  margin: 0.5rem 0 0 0;
+  font-weight: 400;
 }
 
-.card {
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: 5px;
-}
-
-.card-content {
-  padding: 20px;
-  font-family: "Verdana";
-  color: #777;
-}
-
-.card-content h2 {
-  margin-top: 0;
-  font-size: 20px;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px;
-}
-
-button {
-  text-align: center;
-  background-color: #666;
-  border: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  height: 40px;
-  border-radius: 10px;
-  color: white;
-  font-size: 22px;
-  cursor: pointer;
-  margin: 5px;
-}
-
+/* Controls */
 .controls {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  margin: 20px 0;
+  gap: 1rem;
+  margin: 2rem 0 1.5rem 0;
+  background: rgba(45, 52, 70, 0.8);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
 }
 
 .controls select,
 .controls input,
 .controls button {
-  height: 36px;
-  font-size: 16px;
-  padding: 0 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  height: 2.25rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  padding: 0 1rem;
+  background: #272b34;
+  color: #f2f2f2;
+  transition: box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.controls select:focus,
+.controls input:focus,
+.controls button:focus {
+  box-shadow: 0 0 0 2px #7fbcff;
+  background: #31374a;
+}
+
+.controls button {
+  background: linear-gradient(90deg, #5e72eb 0%, #2dce89 100%);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  padding: 0 1.5rem;
+  transition: background 0.2s;
+}
+
+.controls button:hover {
+  background: linear-gradient(90deg, #2dce89 0%, #5e72eb 100%);
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card */
+.card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.14);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s, box-shadow 0.15s;
+  border: 1px solid #3a3a3a;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+  border-color: #7fbcff;
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #f2f2f2;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.13);
+}
+
+.card-meta {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.card-meta ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.card-meta li {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  color: #d2d2d2;
+}
+
+.card-flavor {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #ffedb6;
+  margin-bottom: 0.5rem;
+}
+
+.card-scryfall-link a {
+  color: #7fbcff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.card-scryfall-link a:hover {
+  color: #2dce89;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  background: rgba(30, 40, 60, 0.95);
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid #2dce89;
+}
+
+#quote-button {
+  background: linear-gradient(90deg, #2dce89 0%, #5e72eb 100%);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.7rem 2.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(45, 206, 137, 0.13);
+  transition: background 0.2s;
+}
+
+#quote-button:hover {
+  background: linear-gradient(90deg, #5e72eb 0%, #2dce89 100%);
 }

@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
-    <link rel="stylesheet" href="style.css" />
-    <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css" rel="stylesheet" type="text/css" />
-    <script type="module" src="./main.js"></script>
-  </head>
 
-  <body>
-    <header class="main-header">
-      <h1 class="title">MTG SORT</h1>
-    </header>
-    <div class="controls">
-      <select id="sort-select">
-        <option value="alphabetical">Sort: Alphabetical</option>
-        <option value="color">Sort: Color</option>
-        <option value="cmc">Sort: CMC</option>
-      </select>
+<head>
+  <title>LA TV Shows | Home</title>
+  <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css" rel="stylesheet" type="text/css" />
+  <script type="module" src="./main.js"></script>
+</head>
 
-      <select id="filter-color">
-        <option value="">Filter by Color</option>
-        <option value="W">White</option>
-        <option value="U">Blue</option>
-        <option value="B">Black</option>
-        <option value="R">Red</option>
-        <option value="G">Green</option>
-        <option value="C">Colorless</option>
-      </select>
+<body>
+  <header class="main-header">
+    <h1 class="title">MTG SORT</h1>
+    <p class="subtitle">A Magic: The Gathering Card Browser</p>
+  </header>
+  <div class="controls" aria-label="Card Controls">
+    <select id="sort-select" aria-label="Sort Cards">
+      <option value="alphabetical">Sort: Alphabetical</option>
+      <option value="color">Sort: Color</option>
+      <option value="cmc">Sort: CMC</option>
+    </select>
 
-      <input id="filter-type" type="text" placeholder="Filter by type (e.g., Creature)" />
+    <select id="filter-color" aria-label="Filter by Color">
+      <option value="">Filter by Color</option>
+      <option value="W">⚪ White</option>
+      <option value="U">🔵 Blue</option>
+      <option value="B">⚫ Black</option>
+      <option value="R">🔴 Red</option>
+      <option value="G">🟢 Green</option>
+      <option value="C">⬜ Colorless</option>
+    </select>
 
-      <input id="filter-cmc" type="number" min="0" placeholder="Filter by CMC" />
-      <button id="clear-filters">Clear Filters</button>
-    </div>
+    <input id="filter-type" type="text" placeholder="Type (e.g., Creature)" aria-label="Filter by Type" />
+
+    <input id="filter-cmc" type="number" min="0" placeholder="CMC" aria-label="Filter by CMC" />
+    <button id="clear-filters">Clear Filters</button>
+  </div>
+  <main>
     <div id="card-container"></div>
-    <div class="card" style="display: none">
-      <div class="card-content">
-        <img src="" alt="TV Show Poster" />
-        <h2>TV Show Title</h2>
-        <div class="card-meta">
-          <h3 id="flavor" style="display: none"></h3>
-          <ul>
-            <li id="type"></li>
-            <li id="color-info"></li>
-            <li id="scryfall-link"><a href="">Scryfall Link</a></li>
-          </ul>
-        </div>
+  </main>
+  <div class="card" style="display: none">
+    <div class="card-content">
+      <img src="" alt="TV Show Poster" />
+      <h2>TV Show Title</h2>
+      <div class="card-meta">
+        <h3 id="flavor" style="display: none"></h3>
+        <ul>
+          <li id="type"></li>
+          <li id="color-info"></li>
+          <li id="scryfall-link"><a href="">Scryfall Link</a></li>
+        </ul>
       </div>
     </div>
-      <!-- <button onclick="removeLastCard();">Remove A Card!</button> -->
-    </div>
-  </body>
+  </div>
+  <footer class="footer">
+    <button id="quote-button">Get A Quote!</button>
+  </footer>
+</body>
+
 </html>
