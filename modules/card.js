@@ -112,25 +112,25 @@ export class Card {
     };
 
     /** @type {HTMLLIElement} */
-    const renderType = /** @type {HTMLLIElement} */ (render.querySelector(".card-meta>#type"));
+    const renderType = /** @type {HTMLLIElement} */ (render.querySelector("#type"));
     if (!renderType) {
       throw new Error("Template element missing '#type' element");
     };
 
     /** @type {HTMLHeadingElement} */
-    const renderFlavor = /** @type {HTMLHeadingElement} */ (render.querySelector(".card-meta>#flavor"));
+    const renderFlavor = /** @type {HTMLHeadingElement} */ (render.querySelector("#flavor"));
     if (!renderFlavor) {
       throw new Error("Template element missing '#flavor' element");
     };
 
     /** @type {HTMLLIElement} */
-    const renderColors = /** @type {HTMLLIElement} */ (render.querySelector(".card-meta>#color-info"));
+    const renderColors = /** @type {HTMLLIElement} */ (render.querySelector("#color-info"));
     if (!renderColors) {
       throw new Error("Template element missing '#color-info' element");
     };
 
     /** @type {HTMLAnchorElement} */
-    const renderScryfallURL = /** @type {HTMLAnchorElement} */ (render.querySelector(".card-meta>#scryfall-link"));
+    const renderScryfallURL = /** @type {HTMLAnchorElement} */ (render.querySelector("#scryfall-link"));
     if (!renderScryfallURL) {
       throw new Error("Template element missing 'scryfall-url' element");
     };
@@ -148,6 +148,7 @@ export class Card {
       renderFlavor.style.display = "block";
     }
 
+    // FIX: Color icons are not properly being set on the element
     const colorIcons = this.getManaIcons().join("");
     renderColors.innerHTML = colorIcons;
     renderScryfallURL.href = this.scryfallURL;
