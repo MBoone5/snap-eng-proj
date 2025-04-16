@@ -177,7 +177,7 @@ export class Card {
 }
 
 /**
- * Represent a collection of card objects, enabling sort/filter/etc. prior to rendering
+ * Represent a collection of card objects, enabling sort/field/etc. prior to rendering
  * @class
  */
 export class CardCollection {
@@ -186,21 +186,10 @@ export class CardCollection {
 	 * @readonly
 	 * @enum {string}
 	 */
-	static fields = {
+	static filterFields = {
 		COLOR: "color",
 		CMC: "cmc", // Card.convertedManaCost
 		TYPE: "type",
-	};
-
-	/**
-	 * Enum field for the order to return sorted/filtered/etc. results in -- collection methods will only act on a valid direction
-	 * @readonly
-	 * @enum {string}
-	 */
-	static order = {
-		ASC: "asc", // Order by FIELD, asc
-		DESC: "desc", // Order by FIELD, desc
-		ABC: "alphabetical", // Order by Card.Title, alphabetically
 	};
 
 	static colors = ["W", "U", "B", "R", "G"];
@@ -271,24 +260,24 @@ export class CardCollection {
 		return new CardCollection(cardsSorted);
 	}
 
-  /**
-   * sorts the collection by converted mana cost
-   * @return {CardCollection}
-   */
-  sortCollectionByCMC() {
-    const cardsCopy = this.cards.slice();
+	/**
+	 * sorts the collection by converted mana cost
+	 * @return {CardCollection}
+	 */
+	sortCollectionByCMC() {
+		const cardsCopy = this.cards.slice();
 
-    const cardsSorted = cardsCopy.sort((a, b) => {
-      return a.convertedManaCost - b.convertedManaCost;
-    });
+		const cardsSorted = cardsCopy.sort((a, b) => {
+			return a.convertedManaCost - b.convertedManaCost;
+		});
 
-    return new CardsCollection(cardsSorted);
-  }
+		return new CardCollection(cardsSorted);
+	}
 
-  /**
-   * sorts the collection by alphabetically
-   * @return {CardCollection}
-   */
+	/**
+	 * sorts the collection by alphabetically
+	 * @return {CardCollection}
+	 */
 	sortCollectionAlphabetically() {
 		const cardsCopy = this.cards.slice();
 
@@ -303,24 +292,67 @@ export class CardCollection {
 				return 1;
 			}
 
-      // In any other case, keep the items in place
-      return 0;
+			// In any other case, keep the items in place
+			return 0;
 		});
 
 		return new CardCollection(cardsSorted);
 	}
 
-  /**
-   * sorts the collection in its existing state, but reversed
-   * @return {CardCollection}
-  */
-  sortCollectionReverse() {
-    const cardsCopy = this.cards.slice();
-    const cardsSorted = cardsCopy.reverse();
+	/**
+	 * sorts the collection in its existing state, but reversed
+	 * @return {CardCollection}
+	 */
+	sortCollectionReverse() {
+		const cardsCopy = this.cards.slice();
+		const cardsSorted = cardsCopy.reverse();
 
-    return new CardCollection(cardsSorted);
-  }
+		return new CardCollection(cardsSorted);
+	}
 
+	/**
+	 * filters the collection by a field and value.
+	 * @param {string} field - The field to filter by (e.g., "color", "type", "cmc")
+	 * @param {string|number} value - The value to match
+	 * @return {CardCollection}
+	 */
+	filterBy(field, value) {
+		if (!Object.values(CardCollection.filterFields).includes(field)) {
+			throw new Error(`invalid filter field: ${field}`);
+		}
+
+		const cardsCopy = this.cards.slice();
+		let cardsFiltered;
+
+		if (field === "color" && typeof value === "string") {
+			cardsFiltered = cardsCopy.filter((card) => {
+				// Return all card elements with values in card.colors that are
+				return (
+					Array.isArray(card.colors) &&
+					card.colors.includes(value.toUpperCase())
+				);
+			});
+		}
+
+		if (field === "type" && typeof value === "string") {
+			cardsFiltered = cardsCopy.filter((card) => {
+				// If card.type is missing, skip this card
+				if (typeof card.type !== "string") return false;
+				// Check if the card type contiainse the filter value
+				return card.type.toLowerCase().includes(value.toLowerCase());
+			});
+		}
+
+		if (field === "cmc" && typeof value === "number") {
+			cardsFiltered = cardsCopy.filter((card) => {
+				// If card has no CMC, skip this card
+				if (typeof card.convertedManaCost !== "number") return false;
+				return card.convertedManaCost === value;
+			});
+		}
+
+		return new CardCollection(cardsFiltered);
+	}
 }
 
 /**
