@@ -348,14 +348,37 @@ export class CardCollection {
 		const cardsCopy = this.cards.slice();
 		let cardsFiltered;
 
-		if (field === "color" && typeof value === "string") {
-			cardsFiltered = cardsCopy.filter((card) => {
-				// Return all card elements with values in card.colors that are
-				return (
-					Array.isArray(card.colors) &&
-					card.colors.includes(value.toUpperCase())
-				);
-			});
+		if (field === "color") {
+      let colorFilter = [];
+
+      if (typeof value === "string") {
+        colorFilter = value.toUpperCase().split("");
+      }
+
+      if (typeof value === "object" && Array.isArray(value)) {
+        colorFilter = value.toString().toUpperCase().split(""); // REALLY jank way to uppercase this but it works ig
+      }
+      
+      if (colorFilter.length <= 1) {
+        cardsFiltered = cardsCopy.filter((card) => {
+          // Return all card elements with values in card.colors that are
+          return (
+            Array.isArray(card.colors) &&
+            colorFilter.some((color) => card.colors.includes(color))
+          );
+        });
+      }
+
+      if (colorFilter.length > 1) {
+        cardsFiltered = cardsCopy.filter((card) => {
+          // Return all card elements with values in card.colors that are
+          return (
+            Array.isArray(card.colors) &&
+            colorFilter.every((color) => card.colors.includes(color))
+          );
+        });
+      }
+
 		}
 
 		if (field === "type" && typeof value === "string") {

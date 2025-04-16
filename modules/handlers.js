@@ -21,7 +21,7 @@ export const handleSort = (event) => {
  *
  * @param {Event} event
  */
-export const handleFilter = (event) => {
+export const handleColorFilter = (event) => {
 	currentFilterOpt = {
 		field: "color",
 		value: event.target.value,
@@ -29,6 +29,14 @@ export const handleFilter = (event) => {
 
 
 	populateCardElements({sort: currentSortOpt, filter: currentFilterOpt});
+};
+
+/**
+ *
+ * @param {Event} event
+ */
+export const handleTypeFilter = (event) => {
+  return;
 };
 
 /**

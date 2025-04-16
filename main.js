@@ -2,7 +2,7 @@
 /// <reference path="./modules/card.js" />
 
 import { populateCardElements } from "./modules/utils.js";
-import { handleSort, handleFilter, clearFilters } from "./modules/handlers.js";
+import { handleSort, handleColorFilter, handleTypeFilter, clearFilters } from "./modules/handlers.js";
 
 /**
  * Function to attach the appropriate event listeners/handlers to the page controls
@@ -13,11 +13,11 @@ async function attachEventListeners() {
 
 	document
 		.getElementById("filter-color-group")
-		.addEventListener("change", handleFilter);
+		.addEventListener("change", handleColorFilter);
 
 	document
 		.getElementById("filter-type")
-		.addEventListener("input", handleFilter);
+		.addEventListener("input", handleTypeFilter);
 
 	document.getElementById("filter-cmc").addEventListener("input", handleFilter);
 

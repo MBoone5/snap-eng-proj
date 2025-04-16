@@ -30,7 +30,7 @@
 /**
  * @typedef {Object} FilterOpt
  * @property {string} field
- * @property {string|number} value
+ * @property {string|number|string[]} value
  */
 
 /**
