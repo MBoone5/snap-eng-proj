@@ -192,6 +192,24 @@ export class CardCollection {
 		TYPE: "type", 
   }
 
+  /**
+   * Enum field for the order to return sorted/filtered/etc. results in -- collection methods will only act on a valid direction
+   * @readonly 
+   * @enum {string}
+   */
+  static ORDER = {
+    ASC: "asc", // Order by FIELD, asc 
+    DESC: "desc", // Order by FIELD, desc 
+    ABC: "alphabetical", // Order by Card.Title, alphabetically
+  }
+
+  /**
+   * Priority order for sorting by color, the chosen color(s) should be shifted to index 0 during sort operations
+   * @readonly
+   * @type {Array<string>}
+   */
+  static COLOR_PRIORITY = ["W", "U", "B", "R", "G"];
+
 	/**
 	 * Constructor function for a new CardCollection
 	 * @param {Array<Card>} primitiveCardList - A standard array of Card objects
@@ -205,6 +223,23 @@ export class CardCollection {
 		 */
 		this.cards = cards;
 	}
+  
+  /**
+   * Method to sort the collection, in the specified order, given a specified field to sort by 
+   * @param {string} sortBy - The card field to sort by 
+   * @param {string} orderBy - The direction to return the collection in, after sorting 
+   * @return {CardCollection}
+   */
+  sortCollection(sortBy, orderBy) {
+    if (!(sortBy in CardCollection.FIELDS)) {
+      throw new Error(`Unacceptable choice of field for sort: ${sortBy}`)
+    }
+    if (!(orderBy in CardCollection.ORDER)) {
+      throw new Error(`Unacceptable choice of ordering for results: ${orderBy}`)
+    }
+    return;
+  }
+
 }
 
 /**
