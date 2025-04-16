@@ -259,7 +259,7 @@ export class CardCollection {
 	// FIX: THIS ONLY WORKS BASED ON THE FIRST COLOR OF THE OBJECT
 	// FIX: Need to handle null colors/colorless
 	sortCollectionByColor(sortBy) {
-		const cardsCopy = this.cards.splice();
+		const cardsCopy = this.cards.slice();
 
 		const cardsSorted = cardsCopy.sort((a, b) => {
 			const colorAIndex = this.colorPriority.indexOf(a.colors[0]);
@@ -276,7 +276,7 @@ export class CardCollection {
    * @return {CardCollection}
    */
 	sortCollectionAlphabetically() {
-		const cardsCopy = this.cards.splice();
+		const cardsCopy = this.cards.slice();
 
 		const cardsSorted = cardsCopy.sort((a, b) => {
 			// If card a's title is alphabetically before card b's title
@@ -301,7 +301,7 @@ export class CardCollection {
    * @return {CardCollection}
   */
   sortCollectionReverse() {
-    const cardsCopy = this.cards.splice();
+    const cardsCopy = this.cards.slice();
     const cardsSorted = cardsCopy.reverse();
 
     return new CardCollection(cardsSorted);
