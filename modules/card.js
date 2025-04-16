@@ -295,6 +295,18 @@ export class CardCollection {
 
 		return new CardCollection(cardsSorted);
 	}
+
+  /**
+   * sorts the collection in its existing state, but reversed
+   * @return {CardCollection}
+  */
+  sortCollectionReverse() {
+    const cardsCopy = this.cards.splice();
+    const cardsSorted = cardsCopy.reverse();
+
+    return new CardCollection(cardsSorted);
+  }
+
 }
 
 /**
