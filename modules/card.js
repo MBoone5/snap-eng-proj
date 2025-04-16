@@ -251,29 +251,27 @@ export class CardCollection {
     this.colorPriority = newPriority;
 	}
 
-	/**
-	 * Method to sort the collection, in the specified order, given a specified field to sort by
-	 * @param {string} sortBy - The card field to sort by
-	 * @param {string} orderBy - The direction to return the collection in, after sorting
-	 * @return {CardCollection}
-	 */
-	sortCollection(sortBy, orderBy) {
-		if (!(sortBy in CardCollection.fields)) {
-			throw new Error(`Unacceptable choice of field for sort: ${sortBy}`);
-		}
-		if (!(orderBy in CardCollection.order)) {
-			throw new Error(
-				`Unacceptable choice of ordering for results: ${orderBy}`,
-			);
-		}
-		return;
-	}
+  /**
+   * sorts the collection by the specified color
+   * @param {string} sortBy - color to sort by
+   */
+  // FIX: THIS ONLY WORKS BASED ON THE FIRST COLOR OF THE OBJECT
+  sortCollectionByColor(sortBy) {
+    const cardsCopy = this.cards.splice();
+
+    cardsCopy.sort((a, b) => {
+      const colorAIndex = this.colorPriority.indexOf(a.colors[0]);
+      const colorBIndex = this.colorPriority.indexOf(b.colors[0]);
+
+      return colorAIndex - colorBIndex;
+    })
+  }
 }
 
 /**
  * Accepts an array of card objects, and inserts them into the DOM
  *
- * @param {Array<Card>} cardCollection - An array of Card objects, to be rendered into the DOM
+ * @param {CardCollection} cardCollection - Collection wrapper around all the card objects, to be rendered into the DOM
  * @returns {void}
  */
 export function showCards(cardCollection) {
@@ -300,7 +298,7 @@ export function showCards(cardCollection) {
 
 	cardContainer.innerHTML = "";
 	// Render elements for each card object
-	for (const cardObject of cardCollection) {
+	for (const cardObject of cardCollection.cards) {
 		const renderedCard = cardObject.render(templateCard);
 
 		payload.appendChild(renderedCard);

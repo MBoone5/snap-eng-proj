@@ -2,7 +2,7 @@
 /// <reference path="./modules/card.js" />
 
 import { quoteAlert } from "./modules/alerts.js";
-import { Card, showCards } from "./modules/card.js";
+import { Card, CardCollection, showCards } from "./modules/card.js";
 
 /**
  * Function to fetch our static card data
@@ -23,15 +23,15 @@ async function fetchCardsJSON(dataPath) {
 /**
  * Function to map raw json data of cards into Card objects
  *
- * @returns {Promise<Array<Card>>}
+ * @returns {Promise<CardCollection>}
  */
 async function generateCardObjects() {
 	const cardsAsJSON = await fetchCardsJSON("./static/cards.json");
 
   console.log(`Type: ${typeof cardsAsJSON}`)
   console.log(cardsAsJSON)
-	const cardCollection = cardsAsJSON.card_data.map((card) => new Card(card));
-	return cardCollection;
+	const cardObjects = cardsAsJSON.card_data.map((card) => new Card(card));
+	return new CardCollection(cardObjects);
 }
 
 async function populateCardElements() {
