@@ -32,8 +32,6 @@ async function fetchCardsJSON(dataPath) {
 async function generateCardObjects() {
 	const cardsAsJSON = await fetchCardsJSON("./static/cards.json");
 
-	console.log(`Type: ${typeof cardsAsJSON}`);
-	console.log(cardsAsJSON);
 	const cardObjects = cardsAsJSON.card_data.map((card) => new Card(card));
 	return new CardCollection(cardObjects);
 }
@@ -63,7 +61,7 @@ function applyFilter(filterOpt, cardCollection) {
 		throw new Error("Attempting to sort without providing a sort option");
 	}
 
-	return cardCollection.filterBy(filterOpt.field, filterOpt.value);
+	return cardCollection.filterBy(filterOpt);
 }
 
 /**
@@ -72,7 +70,6 @@ function applyFilter(filterOpt, cardCollection) {
  * @return {Promise<void>}
  */
 export async function populateCardElements(orgSpec) {
-  console.log(orgSpec)
 	let cardCollection = await generateCardObjects();
 
 	if (orgSpec) {

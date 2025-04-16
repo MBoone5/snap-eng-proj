@@ -252,17 +252,17 @@ export class CardCollection {
 
 		if (sortOpt.option === "color") {
 			this.sortCollectionByColor();
-      return this;
+			return this;
 		}
 
 		if (sortOpt.option === "cmc") {
 			this.sortCollectionByCMC();
-      return this;
+			return this;
 		}
 
 		if (sortOpt.option === "alphabetical") {
 			this.sortCollectionAlphabetically();
-      return this;
+			return this;
 		}
 	}
 
@@ -336,67 +336,77 @@ export class CardCollection {
 
 	/**
 	 * filters the collection by a field and value.
-	 * @param {string} field - The field to filter by (e.g., "color", "type", "cmc")
-	 * @param {string|number} value - The value to match
+	 * @param {FilterOpt} filterOpt - The field to filter by (e.g., "color", "type", "cmc")
 	 * @return {CardCollection}
 	 */
-	filterBy(field, value) {
-		if (!Object.values(CardCollection.filterFields).includes(field)) {
-			throw new Error(`invalid filter field: ${field}`);
+	filterBy(filterOpt) {
+		if (!Object.values(CardCollection.filterFields).includes(filterOpt.field)) {
+			throw new Error(`invalid filter field: ${filterOpt.field}`);
 		}
 
+		let filteredCollection;
+
+		if (filterOpt.field === "color" && Array.isArray(filterOpt.value)) {
+			filteredCollection = this.filterByColor(filterOpt.value);
+		}
+
+		if (filterOpt.field === "cmc" && typeof filterOpt.value === "number") {
+			filteredCollection = this.filterByCMC(filterOpt.value);
+		}
+
+		if (filterOpt.field === "type" && typeof filterOpt.value === "string") {
+			filteredCollection = this.filterByType(filterOpt.value);
+		}
+
+		return filteredCollection;
+	}
+
+	filterByColor(value) {
 		const cardsCopy = this.cards.slice();
 		let cardsFiltered;
 
-		if (field === "color") {
-      let colorFilter = [];
-
-      if (typeof value === "string") {
-        colorFilter = value.toUpperCase().split("");
-      }
-
-      if (typeof value === "object" && Array.isArray(value)) {
-        colorFilter = value.toString().toUpperCase().split(""); // REALLY jank way to uppercase this but it works ig
-      }
-      
-      if (colorFilter.length <= 1) {
-        cardsFiltered = cardsCopy.filter((card) => {
-          // Return all card elements with values in card.colors that are
-          return (
-            Array.isArray(card.colors) &&
-            colorFilter.some((color) => card.colors.includes(color))
-          );
-        });
-      }
-
-      if (colorFilter.length > 1) {
-        cardsFiltered = cardsCopy.filter((card) => {
-          // Return all card elements with values in card.colors that are
-          return (
-            Array.isArray(card.colors) &&
-            colorFilter.every((color) => card.colors.includes(color))
-          );
-        });
-      }
-
-		}
-
-		if (field === "type" && typeof value === "string") {
+		if (value.length <= 1) {
 			cardsFiltered = cardsCopy.filter((card) => {
-				// If card.type is missing, skip this card
-				if (typeof card.type !== "string") return false;
-				// Check if the card type contiainse the filter value
-				return card.type.toLowerCase().includes(value.toLowerCase());
+				// Return all card elements with values in card.colors that are
+				return (
+					Array.isArray(card.colors) &&
+					value.some((color) => card.colors.includes(color))
+				);
 			});
 		}
 
-		if (field === "cmc" && typeof value === "number") {
+		if (value.length > 1) {
 			cardsFiltered = cardsCopy.filter((card) => {
-				// If card has no CMC, skip this card
-				if (typeof card.convertedManaCost !== "number") return false;
-				return card.convertedManaCost === value;
+				// Return all card elements with values in card.colors that are
+				return (
+					Array.isArray(card.colors) &&
+					value.every((color) => card.colors.includes(color))
+				);
 			});
 		}
+
+		return new CardCollection(cardsFiltered);
+	}
+
+	filterByCMC(value) {
+		const cardsCopy = this.cards.slice();
+		const cardsFiltered = cardsCopy.filter((card) => {
+			// If card has no CMC, skip this card
+			if (typeof card.convertedManaCost !== "number") return false;
+			return card.convertedManaCost === value;
+		});
+
+		return new CardCollection(cardsFiltered);
+	}
+
+	filterByType(value) {
+		const cardsCopy = this.cards.slice();
+		const cardsFiltered = cardsCopy.filter((card) => {
+			// If card.type is missing, skip this card
+			if (typeof card.type !== "string") return false;
+			// Check if the card type contiainse the filter value
+			return card.type.toLowerCase().includes(value.toLowerCase());
+		});
 
 		return new CardCollection(cardsFiltered);
 	}
