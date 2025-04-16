@@ -14,7 +14,7 @@ let currentFilterOpt = null;
 export const handleSort = (event) => {
 	currentSortOpt = { option: event.target.value };
 
-	populateCardElements({sort: currentSortOpt, filter: currentFilterOpt});
+	populateCardElements({ sort: currentSortOpt, filter: currentFilterOpt });
 };
 
 /**
@@ -22,13 +22,15 @@ export const handleSort = (event) => {
  * @param {Event} event
  */
 export const handleColorFilter = (event) => {
+	const checkboxElements = event.target.parentElement.parentElement.querySelectorAll("input:checked");
+	const selectedColors = Array.from(checkboxElements).map((box) => box.value);
+
 	currentFilterOpt = {
 		field: "color",
-		value: event.target.value,
+		value: selectedColors,
 	};
 
-
-	populateCardElements({sort: currentSortOpt, filter: currentFilterOpt});
+	populateCardElements({ sort: currentSortOpt, filter: currentFilterOpt });
 };
 
 /**
@@ -36,7 +38,15 @@ export const handleColorFilter = (event) => {
  * @param {Event} event
  */
 export const handleTypeFilter = (event) => {
-  return;
+	return;
+};
+
+/**
+ *
+ * @param {Event} event
+ */
+export const handleCMCFilter = (event) => {
+	return;
 };
 
 /**
@@ -44,8 +54,8 @@ export const handleTypeFilter = (event) => {
  * @param {Event} event
  */
 export const clearFilters = (event) => {
-  currentSortOpt = null;
-  currentFilterOpt = null;
+	currentSortOpt = null;
+	currentFilterOpt = null;
 
 	populateCardElements();
 };
