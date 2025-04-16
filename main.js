@@ -1,51 +1,29 @@
 /// <reference path="./types.js" />
 /// <reference path="./modules/card.js" />
 
-import { Card, CardCollection, showCards } from "./modules/card.js";
-import { fetchCardsJSON } from "./modules/utils.js";
-
-/**
- * Function to map raw json data of cards into Card objects
- *
- * @returns {Promise<CardCollection>}
- */
-async function generateCardObjects() {
-	const cardsAsJSON = await fetchCardsJSON("./static/cards.json");
-
-  console.log(`Type: ${typeof cardsAsJSON}`)
-  console.log(cardsAsJSON)
-	const cardObjects = cardsAsJSON.card_data.map((card) => new Card(card));
-	return new CardCollection(cardObjects);
-}
-
-/**
- * Function to populate the page with card elements, with any specefied filters/sorts/etc.
- * @param {Object<string>|null} orgSpec - Object that specifies how to organize the data, if at all
- * @return {void}
- */
-async function populateCardElements(orgSpec) {
-	// Dynamically insert card content
-  if (orgSpec) {
-    return;
-  }
-
-	const cardCollection = await generateCardObjects();
-	showCards(cardCollection);
-}
+import { populateCardElements } from "./modules/utils.js";
+import { handleSort, handleFilter, clearFilters } from "./modules/handlers.js";
 
 /**
  * Function to attach the appropriate event listeners/handlers to the page controls
  * @return {void}
  */
 async function attachEventListeners() {
-  // Add janky listeners
-  // FIX: couldn't finish in time :(
-  // document.getElementById('sort-select').addEventListener('change')
-  // document.getElementById('filter-color').addEventListener('change')
-  // document.getElementById('filter-type').addEventListener('input')
-  // document.getElementById('filter-cmc').addEventListener('input')
-  // document.getElementById('clear-filters').addEventListener('click')
-  return;
+	document.getElementById("sort-select").addEventListener("change", handleSort);
+
+	document
+		.getElementById("filter-color")
+		.addEventListener("change", handleFilter);
+
+	document
+		.getElementById("filter-type")
+		.addEventListener("input", handleFilter);
+
+	document.getElementById("filter-cmc").addEventListener("input", handleFilter);
+
+	document
+		.getElementById("clear-filters")
+		.addEventListener("click", clearFilters);
 }
 
 /**
@@ -55,8 +33,7 @@ async function attachEventListeners() {
 function main() {
 	console.log("Entered main, commencing misson...");
 	populateCardElements();
-  attachEventListeners();
-
+	attachEventListeners();
 }
 
 // This calls main() function when the doc has loaded

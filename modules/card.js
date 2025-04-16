@@ -355,45 +355,6 @@ export class CardCollection {
 	}
 }
 
-/**
- * Accepts an array of card objects, and inserts them into the DOM
- *
- * @param {CardCollection} cardCollection - Collection wrapper around all the card objects, to be rendered into the DOM
- * @returns {void}
- */
-export function showCards(cardCollection) {
-	// Get content area for cards, and clear existing elements
-	/** @type {HTMLDivElement} */
-	const cardContainer = /** @type {HTMLDivElement} */ (
-		document.getElementById("card-container")
-	);
-	if (!cardContainer) {
-		throw new Error("Unable to select 'card-container' div");
-	}
-
-	// Get template element
-	/** @type {HTMLDivElement} */
-	const templateCard = /** @type {HTMLDivElement} */ (
-		document.querySelector(".card")
-	);
-	if (!templateCard) {
-		throw new Error("Unable to select card template");
-	}
-
-	// Empty document fragment to be our payload for this data
-	const payload = document.createDocumentFragment();
-
-	cardContainer.innerHTML = "";
-	// Render elements for each card object
-	for (const cardObject of cardCollection.cards) {
-		const renderedCard = cardObject.render(templateCard);
-
-		payload.appendChild(renderedCard);
-	}
-
-	cardContainer.appendChild(payload);
-}
-
 // TODO: Enable this once we circle back on CRUD
 // function removeLastCard() {
 // 	titles.pop(); // Remove last item in titles array

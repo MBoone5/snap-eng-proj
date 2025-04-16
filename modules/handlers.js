@@ -5,31 +5,39 @@
  *
  * @param {Event} event
  */
-const handleSortOrFilter = (event) => {
-  return;
+export const handleSort = (event) => {
+  console.log(`Event handled - handleSort: ${event.target.value}`);
 }
 
 /**
  *
  * @param {Event} event
  */
-const clearFilters = (event) => {
-
+export const handleFilter = (event) => {
+  console.log(`Event handled - handleSort: ${event.target.value}`);
 }
 
 /**
  *
  * @param {Event} event
  */
-const handleCreateCard = (event) => {
-  return;
+export const clearFilters = (event) => {
+  console.log(`Event handled - clearFilters: ${event.target.value}`);
 }
 
 /**
  *
  * @param {Event} event
  */
-const handleDeleteCard = (event) => {
-  return;
+export const handleCreateCard = (event) => {
+  console.log(`Event handled - handleCreateCard: ${event.target.value}`);
+}
+
+/**
+ *
+ * @param {Event} event
+ */
+export const handleDeleteCard = (event) => {
+  console.log(`Event handled - handleDeleteCard: ${event.target.value}`);
 }
 
