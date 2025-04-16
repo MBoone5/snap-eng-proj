@@ -17,8 +17,12 @@ export const handleSort = (event) => {
  * @param {Event} event
  */
 export const handleFilter = (event) => {
-  const filterSpec = {}
-  console.log(`Event handled - handleSort: ${event.target.value}`);
+  const filterSpec = {
+    "field": "color",
+    "value": event.target.value,
+  }
+
+  populateCardElements(null, filterSpec);
 }
 
 /**
@@ -26,7 +30,9 @@ export const handleFilter = (event) => {
  * @param {Event} event
  */
 export const clearFilters = (event) => {
-  console.log(`Event handled - clearFilters: ${event.target.value}`);
+  document.querySelector("#sort-select").value = "alphabetical";
+  document.querySelector("#filter-color").value = "";
+  populateCardElements();
 }
 
 /**

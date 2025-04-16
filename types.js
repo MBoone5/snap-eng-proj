@@ -29,9 +29,8 @@
 
 /**
  * @typedef {Object} FilterOpt
- * @property {string|null} [type=null]
- * @property {string|null} [colors=null]
- * @property {number|null} [cmc=null]
+ * @property {string} field
+ * @property {string|number} value
  */
 
 /**
