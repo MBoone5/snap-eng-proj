@@ -1,7 +1,8 @@
+/// <reference path="../types.js" />
+
 /**
  * @fileOverview Module for Card objects and applicable methods that act on them
  * @module card 
- * NOTE: Custom typedefs must be triple-slash referenced in main when using this module
  */
 
 /**
@@ -91,35 +92,65 @@ export class Card {
 
   /**
    * Generates a DOM element out of this card object 
-   * @param {!Object} template - a DOM card element to use as a template
+   * @param {!Element} template - a DOM card element to use as a template
    * @return {!Object}
    */
   render(template) {
-    const render = template.cloneNode(true);
-    const renderTitle = render.querySelector("h2");
-    const renderImage = render.querySelector("img");
-    const renderMeta = render.querySelector(".card-meta");
+    /** @type {HTMLDivElement} */
+    const render = /** @type {HTMLDivElement} */ (template.cloneNode(true));
 
-    render.style.display = "block" // Force block display in case there's been some responsive changes
+    /** @type {HTMLHeadingElement} */
+    const renderTitle = /** @type {HTMLHeadingElement} */ (render.querySelector("h2"));
+    if (!renderTitle) {
+      throw new Error("Template element missing 'title' element");
+    };
+
+    /** @type {HTMLImageElement} */
+    const renderImage = /** @type {HTMLImageElement} */ (render.querySelector("img"));
+    if (!renderImage) {
+      throw new Error("Template element missing 'image' element");
+    };
+
+    /** @type {HTMLLIElement} */
+    const renderType = /** @type {HTMLLIElement} */ (render.querySelector(".card-meta>#type"));
+    if (!renderType) {
+      throw new Error("Template element missing '#type' element");
+    };
+
+    /** @type {HTMLHeadingElement} */
+    const renderFlavor = /** @type {HTMLHeadingElement} */ (render.querySelector(".card-meta>#flavor"));
+    if (!renderFlavor) {
+      throw new Error("Template element missing '#flavor' element");
+    };
+
+    /** @type {HTMLLIElement} */
+    const renderColors = /** @type {HTMLLIElement} */ (render.querySelector(".card-meta>#color-info"));
+    if (!renderColors) {
+      throw new Error("Template element missing '#color-info' element");
+    };
+
+    /** @type {HTMLAnchorElement} */
+    const renderScryfallURL = /** @type {HTMLAnchorElement} */ (render.querySelector(".card-meta>#scryfall-link"));
+    if (!renderScryfallURL) {
+      throw new Error("Template element missing 'scryfall-url' element");
+    };
+
+    render.style.display = "block" // Force block display to unhide template element
 
     // Populate new element with card data
     renderTitle.textContent = this.title;
-
     renderImage.src = this.imageURL;
     renderImage.alt = `Card Art - ${this.title}`;
-
-    // Populate meta info
-    renderMeta.querySelector("#type").textContent = this.type;
+    renderType.textContent = this.type;
 
     if (this.flavorText) {
-      const flavorTextHeader = renderMeta.querySelector("#flavor");
-      flavorTextHeader.textContent = this.flavorText;
-      flavorTextHeader.style.display = "block";
+      renderFlavor.textContent = this.flavorText;
+      renderFlavor.style.display = "block";
     }
 
     const colorIcons = this.getManaIcons().join("");
-    renderMeta.querySelector("#color-info").innerHTML = colorIcons;
-    renderMeta.querySelector("#scryfall-link>a").href = this.scryfallURL;
+    renderColors.innerHTML = colorIcons;
+    renderScryfallURL.href = this.scryfallURL;
 
 	  // console.log("new card:", renderTitle, "- html: ", render);
 
